@@ -4,7 +4,27 @@ So you've finally installed macOS onto your desktop/laptop/smart fridge but you 
 
 # So why does my Bluetooth work yet Wifi doesn't?
 
+
+# Supported chipsets
+
+* BCM94360CD
+* BCM94331CD
+* BCM94360CS2
+* BCM94352Z
+* BCM94352Z
+* BCM94350ZAE
+
+High Sierra:
+
+* BCM943224
+* AR9285
+* AR9287
+* AR9280
+* AR9380
+
 # Incompatible Wireless cards
+
+All intel
 
 ## Compatible Wireless Cards
 
