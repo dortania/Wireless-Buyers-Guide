@@ -2,6 +2,9 @@ So you've finally installed macOS onto your desktop/laptop/smart fridge but you 
 
 # So why does my Bluetooth work yet Wifi doesn't?
 
+Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB bus generic devices can easily hook into IOKit and act semi natively(usually with the loss of Handoff, Airdrop, etc). Wifi, on the other hand, is quite a bit more complicated as there's per device/family firmware that needs to be loaded and so the Broadcom/Atheros Firmware obviously does nothing when in the presence of intel
+
+(I realize that USB Bus is Universal Serial Bus Bus, shut up)
 
 # Supported chipsets
 
@@ -24,45 +27,3 @@ High Sierra:
 
 All intel
 
-## Compatible Wireless Cards
-
-# PCIe
-
-* BCM94360CD
-* BCM94331CD
-
-# M.2
-
-* BCM94360CS2 - native WiFi/ac and BT4LE [Native]
-* BCM94352Z/AzureWave AW-CE162NF/DW1560 - supports WiFi/ac and BT4LE (for A/E slot)
-* BCM94352Z/Lenovo Part: 04X6020 - supports WiFi/ac and BT4LE (for E slot only)
-* BCM94350ZAE/DW1820A - native WiFi/ac and BT4LE [Native]
-
-
-High Sierra: 
-
-* BCM943224 HMB supports Airport and BT3 (may probably work on Mojave too with some hacks, maybe...)
-* AR9285 (as in AR5B195/95) 2.4 GHz, abgn, 1 stream, 54/75 Mbps (works on mojave with a little hack, NOT RECOMMENDED ANYMORE)
-* AR9287 (as in AR5B197/97) 2.4 GHz, abgn, 2 stream, 108/150 Mbps (works on mojave with a little hack, NOT RECOMMENDED ANYMORE)
-* AR9280 - 2.4/5 GHz, abgn, 2 Stream, 300 Mbps [Native] (works on mojave with a little hack, NOT RECOMMENDED ANYMORE)
-* AR9380 - 2.4/5 GHz, abgn, 3 Stream, 450 Mbps [Native] (works on mojave with a little hack, NOT RECOMMENDED ANYMORE)
-
-# USB
-
-* Asus USB-N 10 Nano(ASUS USB N10 Wireless N150 Nano)
-* TP-Link TL-WN725N
-* 
-
-[Sauce](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
-* EDIMAX- EW-7722UTn V2
-* EDIMAX N300
-* TRENDnet N150 Micro
-* TL-WN823Nv3
-* TL-WN823Nv2
-* TL-WN725Nv3
-* TL-WN722Nv3
-* TL-WN821Nv6
-* Archer T2U NANO
-* ArcherT4U V3
-* Archer T9UH V2
-* Linksys WUSB6300
