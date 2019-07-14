@@ -11,6 +11,7 @@ Currently supported chipsets:
 * BCM94352Z
 * BCM94350ZAE
 
+# Native
 
 * **BCM94360CD**:
 
