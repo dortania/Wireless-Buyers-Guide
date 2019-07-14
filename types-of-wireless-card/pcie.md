@@ -14,10 +14,7 @@ Currently supported chipsets:
 High Sierra:
 
 * BCM943224
-* AR9285
-* AR9287
-* AR9280
-* AR9380
+
 
 BCM94360CD:
 
@@ -35,8 +32,25 @@ BCM94352:
 
 * [TP-LINK Archer T6E](pcie.md)
 
-Atheros 9380\(802.11b/g/n\):
 
-* [TP-Link TL-WDN4800](pcie.md)
-* [Rosewill N900](pcie.md)
+# Older Models(Unsupported in Mojave)
+
+With these model you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There's a couple different kexts to do this but generally we recommend avoiding this card unless absolutly necessary
+
+* **Atheros 9380** (802.11b/g/n\):
+   * TP-Link TL-WDN4800
+   * Rosewill N900
+   * Atheros AR5BDT92
+* **Atheros 9280**
+   * Dell DW 1525
+   * Gemtek WPEA-113N
+* **Atheros AR9287** 
+   * Nexxt Solutions Saros 300 (APLDT300N1)
+   * TP-LINK TL-WN881ND
+* **AR9285**
+   * AzureWave AW-NE106
+   * Rosewill RNX-N150PCe v1
+   * SMC SMCWPCIeS-N
+   * TP-LINK TL-WN781ND v1
+   * ZyXEL NWD3105
 
