@@ -2,8 +2,13 @@
 
 So for some reason people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list\(notice how all intel chips are unsupported\):
 
+
+Wireless AX
+
 * Intel® Wi-Fi 6 AX201
 * Intel® Wi-Fi 6 AX200
+
+Wireless AC
 * Intel® Wireless-AC 9560
 * Intel® Wireless-AC 9462
 * Intel® Wireless-AC 9461
@@ -13,13 +18,16 @@ So for some reason people need a list of unsupported wireless cards just to reas
 * Intel® Dual Band Wireless-AC 8260
 * Intel® Dual Band Wireless-AC 3165
 * Intel® Dual Band Wireless-AC 7265
-* Intel® Dual Band Wireless-N 7265
-* Intel® Wireless-N 7265
+* Intel® Dual Band Wireless-AC 7260
 * Intel® Dual Band Wireless-AC 3160
 * Intel® Dual Band Wireless-AC 7260
+
+Wireless N
+
+* Intel® Dual Band Wireless-N 7265
+* Intel® Wireless-N 7265
 * Intel® Dual Band Wireless-N 7260
 * Intel® Wireless-N 7260
-* Intel® Dual Band Wireless-AC 7260
 * Intel® Centrino® Advanced-N 6230
 * Intel® Centrino® Wireless-N 1030
 * Intel® Centrino® Wireless-N 130
