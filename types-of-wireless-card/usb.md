@@ -1,41 +1,59 @@
-# USB
+While the worst options for wireless, this is one that not many people can choose to avoid due to either their wireless cards being soldered or not wanting to break their warranty to replace their card. 
 
 
-RTL8188CUS:
+Things to keep in mind:
 
-* [Asus USB-N 10 Nano/N150](https://www.asus.com/Networking/USBN10_NANO/)
-* [TRENDnet N150 Micro](https://www.trendnet.com/products/product-detail?prod=195_TEW-648UBM)
-
-RTL8192CU:
-
-* [EDIMAX- EW-7722UTn V2](https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/global/wireless_adapters_n300/ew-7722utn_v2)
-* [EDIMAX N300](https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/in/wireless_adapters_n300/ew-7612uan_v2/)
-
-RTL8192EU:
-
-* [TL-WN823N v2](https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn823n/)
-* [TL-WN823N v3](https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn823n/)
-* [TL-WN821N v6](https://www.tp-link.com/ca/home-networking/adapter/tl-wn821n/)
+* Features like AirDrop, Handoff, etc likely won't work
+* Sleep can easily break
+* Need a seperate adapter for Bluetooth
+* Most cards use a poorly made 32bit app to get wifi working(and you're reliant on the manufacturer to update their app for Catalina)
 
 
-RTL8188EUS:
+And with all these issues it's quite hard to recommend a USB wireless card but there still is hope:
 
-* [TL-WN725N v3](https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn725n/)
-* [TL-WN722N v3](https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn722n/)
+[Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
-RTL8811AU:
+While not perfect this might just be as close as we can get to "good" USB wireless thanks to it being kept up-to date by [Chris1111](https://github.com/chris1111)(So no 32bit app crap) and supports a large variety of Chipsets. 
 
-* Archer T2U NANO
 
-RTL8812BU:
+I've listed out all the chipsets that have been known good and you can see if yours matches any of these chipsets
 
-* Archer T4U V3
 
-RTL8814AU:
+* **RTL8188CUS**:
 
-* [Archer T9UH V2](https://www.tp-link.com/us/home-networking/usb-adapter/archer-t9uh/)
+   * Asus USB-N 10 Nano/N150
+   * TRENDnet N150 Micro
 
-RTL8812AU:
+* **RTL8192CU**:
 
-* [Linksys WUSB6300](https://www.linksys.com/us/p/P-WUSB6300/)
+   * EDIMAX- EW-7722UTn V2
+   * EDIMAX N300
+
+* **RTL8192EU**:
+
+   * TL-WN823N v2
+   * TL-WN823N v3
+   * TL-WN821N v6
+
+
+* **RTL8188EUS**:
+
+   * TL-WN725N v3
+   * TL-WN722N v3
+
+* **RTL8811AU**:
+
+   * Archer T2U NANO
+
+* **RTL8812BU**:
+
+   * Archer T4U V3
+
+* **RTL8814AU**:
+
+   * Archer T9UH V2
+
+* **RTL8812AU**:
+
+   * Linksys WUSB6300
 
