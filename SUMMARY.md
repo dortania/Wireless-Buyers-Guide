@@ -8,6 +8,7 @@
 * [PCIe](types-of-wireless-card/pcie.md)
 * [mini PCIe](types-of-wireless-card/mpcie.md)
 * [M.2](types-of-wireless-card/m2.md)
+* [Express Card](types-of-wireless-card/Express.md)
 * [USB](types-of-wireless-card/usb.md)
 
 ## Misc
