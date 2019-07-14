@@ -1,5 +1,3 @@
-# mini PCIe
-
 So mini PCIe is most useful for users with older systems generally being pre-skylake as those systems don't have M.2 based wireless. With mini PCIe you have a couple options:
 
 * Half Sized mini PCIe
