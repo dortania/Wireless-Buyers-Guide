@@ -11,7 +11,7 @@ Things to keep in mind:
 
 And with all these issues it's quite hard to recommend a USB wireless card but there still is hope:
 
-[Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
+# [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
 While not perfect this might just be as close as we can get to "good" USB wireless thanks to it being kept up-to date by [Chris1111](https://github.com/chris1111)(So no 32bit app crap) and supports a large variety of Chipsets. 
 
