@@ -21,11 +21,11 @@ Currently supported chipsets:
    * ASUS PCE-AC66
    * ASUS PCE-AC68
 
-**BCM94360CS2**:
+* **BCM94360CS2**:
 
    * AWD Wireless LAN Card\(BCM94360CS2\)
 
-**BCM94352**:
+* **BCM94352**:
 
    * TP-LINK Archer T6E
    * Rosewill RNX-AC1300PCE
