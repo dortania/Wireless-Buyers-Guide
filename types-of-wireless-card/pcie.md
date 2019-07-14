@@ -5,7 +5,7 @@ By far the most popluar option for desktop users has been to buy an old Apple Ai
 Currently supported chipsets:
 
 * BCM94360CD
-* BCM94331CD(need to force the kext to load sometimes)
+* BCM94331CD\(need to force the kext to load sometimes\)
 * BCM94360CS2
 * BCM94352Z
 * BCM94352Z
@@ -19,33 +19,24 @@ High Sierra:
 * AR9280
 * AR9380
 
-
-
-
 BCM94360CD:
 
-* [Fenvi FV T919]()
-* [Fenvi AC1900(no bluetooth)]()
-* [TP-LINK Archer T9E AC1900]()
-* [TP-LINK Archer T8E]()
-* [RNX-AC1900PCE(no bluetooth)]()
-
-
+* [Fenvi FV T919](pcie.md)
+* [Fenvi AC1900\(no bluetooth\)](pcie.md)
+* [TP-LINK Archer T9E AC1900](pcie.md)
+* [TP-LINK Archer T8E](pcie.md)
+* [RNX-AC1900PCE\(no bluetooth\)](pcie.md)
 
 BCM94360CS2:
 
-* [AWD Wireless LAN Card(BCM94360CS2)]()
+* [AWD Wireless LAN Card\(BCM94360CS2\)](pcie.md)
 
 BCM94352:
 
-* [TP-LINK Archer T6E]()
+* [TP-LINK Archer T6E](pcie.md)
 
+Atheros 9380\(802.11b/g/n\):
 
+* [TP-Link TL-WDN4800](pcie.md)
+* [Rosewill N900](pcie.md)
 
-
-
-
-Atheros 9380(802.11b/g/n):
-
-* [TP-Link TL-WDN4800]()
-* [Rosewill N900]()

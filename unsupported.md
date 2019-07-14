@@ -1,4 +1,6 @@
-So for some reason people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list(notice how all intel chips are unsupported):
+# Unsupported Chipsets
+
+So for some reason people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list\(notice how all intel chips are unsupported\):
 
 * Intel® Wi-Fi 6 AX201
 * Intel® Wi-Fi 6 AX200
@@ -37,3 +39,4 @@ So for some reason people need a list of unsupported wireless cards just to reas
 * Intel® Wireless WiFi Link 5300AGN
 * Intel® Wireless WiFi Link 5350AGN
 * Intel® Wireless WiFi Link 5150AGN
+
