@@ -1,6 +1,23 @@
+## Natively Supported chipsets
+
+* BCM94360CD
+* BCM94331CD
+* BCM94360CS2
+* BCM94352Z
+* BCM94352Z
+* BCM94350ZAE
+
+High Sierra:
+
+* BCM943224
+* AR9285
+* AR9287
+* AR9280
+* AR9380
+
 # Unsupported Chipsets
 
-So for some reason people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list\(notice how all intel chips are unsupported\):
+So for some reason people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list of all intel chips cause why not:
 
 
 Wireless AX
