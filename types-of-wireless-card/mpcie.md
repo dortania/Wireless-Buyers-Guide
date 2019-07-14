@@ -11,11 +11,11 @@ For older laptop users you'll generally be limited to half sized mini PCIe wirel
 
 For users of the half height have a couple options:
 
-* BCM94360HMB(ABGN+AC, 3x3:3):
+* BCM94360HMB (ABGN+AC, BT 4.0, 3x3:3):
 
    * AzureWave AW-CB160H
    
-* BCM94352HMB(ABGN+AC, 2x2:2):
+* BCM94352HMB (ABGN+AC,BT 4.0, 2x2:2):
 
    * AzureWave AW-CE123H
    * Dell DW1550
@@ -24,9 +24,27 @@ For users of the half height have a couple options:
 
 
 
-BCM94360HMB - 2.4/5 GHz, ac+abgn, 3 Stream, 1300 Mbs
-BCM94360CD - 2.4/5 GHz, ac+abgn, 3 Stream, 1300 Mbs (PCIe x1, not HM)
-BCM94331CD - 2.4/5 GHz, abgn, 3 stream, 450 Mbs + BT (4.0) 10.10+/Whitelist
-BCM943224 HMS/HMB - 2.4/5, GHz abgn, 2 stream, 150/300 Mbs 10.10+/Whitelist
-AR9280 - 2.4/5 GHz, abgn, 2 Stream, 300 Mbs
-AR9380 - 2.4/5 GHz, abgn, 3 Stream, 450 Mbs
+Older models(Not natively supported in Mojave)
+
+* BCM943224 HMS/HMB (ABGN, 2x2:2)
+   * Dell DW1520
+   * HP Gemtek WMIB-275N 
+   * Lenovo Gemtek WMIB-275N
+   * Pegatron UPWL6024
+* AR9280 - 2.4/5 GHz, abgn, 2 Stream, 300 Mbs
+
+* AR9380 - 2.4/5 GHz, abgn, 3 Stream, 450 Mbs
+   * Alpha Networks WMC-ND02
+   * Killer Wireless-N 1103
+   * Atheros AR5BHB112
+   * Atheros AR5BXB112
+   * Compex WLE300N5-22 7A0000
+   * Compex WLE300NX 6A0000
+   * HP U98Z081
+   * JJPlus JWX6051
+   * Lite-On WN6508A
+   * SparkLAN WPEA-127N
+   * SparkLAN WPEA-128N
+   * Tehnoetic TET-N450DB
+   * Vikings Atheros450
+   * Wistron NeWeb DNXA-G1
