@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Unsupported Chipsets](unsupported.md)
+* [When/What kexts to use](Kext.md)
 
 ## Types of wireless card
 
