@@ -1,7 +1,9 @@
+With macOS there's a limited amount of supported hardware regardless of which cataogry and wireless cards are no different. 
+
 ## Natively Supported chipsets
 
 * BCM94360CD
-* BCM94331CD
+* BCM94331CD(May require you to force load kext when running Catalina)
 * BCM94360CS2
 * BCM94352Z
 * BCM94352Z
