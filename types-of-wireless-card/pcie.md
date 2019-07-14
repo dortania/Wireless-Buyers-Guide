@@ -1,5 +1,3 @@
-# PCIe
-
 By far the most popluar option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benifits of this is that as long as the harware works natively on a real mac it will work on without any kexts/framwork modifcations
 
 Currently supported chipsets:
