@@ -1,19 +1,42 @@
 # USB
 
-* Asus USB-N 10 Nano\(ASUS USB N10 Wireless N150 Nano\)
 
-[Sauce](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
+RTL8188CUS:
+
+* Asus USB-N 10 Nano\(ASUS USB N10 Wireless N150 Nano\)
+* TRENDnet N150 Micro
+
+RTL8192CU:
 
 * EDIMAX- EW-7722UTn V2
 * EDIMAX N300
-* TRENDnet N150 Micro
+
 * TL-WN823Nv3
+
+RTL8192EU:
+
 * TL-WN823Nv2
+* TL-WN821Nv6
+
+
+RTL8188EUS:
+
 * TL-WN725Nv3
 * TL-WN722Nv3
-* TL-WN821Nv6
+
+RTL8811AU:
+
 * Archer T2U NANO
-* ArcherT4U V3
+
+RTL8812BU:
+
+* Archer T4U V3
+
+RTL8814AU:
+
 * Archer T9UH V2
+
+RTL8812AU:
+
 * Linksys WUSB6300
 
