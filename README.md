@@ -25,7 +25,3 @@ High Sierra:
 * AR9280
 * AR9380
 
-## Incompatible Wireless cards
-
-All intel
-
