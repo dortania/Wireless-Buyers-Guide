@@ -22,8 +22,6 @@ For users of the half height have a couple options:
    * HP TPC-Q013
    * Lenovo Lite-On WCBN606BH
 
-
-
 Older models(Not natively supported in Mojave)
 
 * BCM943224 HMS/HMB (ABGN, 2x2:2)
@@ -31,9 +29,25 @@ Older models(Not natively supported in Mojave)
    * HP Gemtek WMIB-275N 
    * Lenovo Gemtek WMIB-275N
    * Pegatron UPWL6024
-* AR9280 - 2.4/5 GHz, abgn, 2 Stream, 300 Mbs
+   
+* AR9280 (ABGN, 2x2:2)
 
-* AR9380 - 2.4/5 GHz, abgn, 3 Stream, 450 Mbs
+   * Atheros AR5BHB92
+   * Atheros AR5BXB92
+   * AzureWave AW-NE772
+   * AzureWave AW-NE773
+   * Compex WLE200N5-23-ESD
+   * Compex WLE200NX
+   * Dell DW1515
+   * HP U98Z044
+   * HP Lite-On WN6502AH
+   * Silex SX-PCEAN
+   * SparkLAN WPEA-110N
+   * SparkLAN WPEA-111N
+   * Ubiquiti Networks SR71-E
+   * Unex DNXA-92
+
+* AR9380 (ABGN, 3x3:3)
    * Alpha Networks WMC-ND02
    * Killer Wireless-N 1103
    * Atheros AR5BHB112
