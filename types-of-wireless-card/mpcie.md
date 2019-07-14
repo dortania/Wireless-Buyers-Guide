@@ -15,6 +15,11 @@ For users of the half height have a couple options:
 * **BCM94360HMB** (ABGN+AC, BT 4.0, 3x3:3):
 
    * AzureWave AW-CB160H
+   * Alpha Networks WMC-AC01
+   * Arcadyan WN8833B-AC
+   * Gemtek WMDB-150AC
+   * Unex DAXB-81
+   * Wistron NeWeb DNXB-C1
    
 * **BCM94352HMB** (ABGN+AC,BT 4.0, 2x2:2):
 
