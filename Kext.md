@@ -1,13 +1,16 @@
 # When and what kexts to use?
 
 **[AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)**
+
 This is needed to fix wifi on many broadcom cards, while not all of them need them it's generally required when using non-apple manufactured wireless cards. This also has the added functionality of injecting old broadcom kexts into newer versions of macOS
 
 **[BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)**
+
 Required for all non-apple manufactured wireless cards due to how Firmware is handled
 
 
 **[BrcmBluetoothInjector](https://github.com/RehabMan/OS-X-BrcmPatchRAM)**
+
 Used to support the BCM20702, generally not needed and required to build from source
 
 **[BT4LEContinuityFixup]()
