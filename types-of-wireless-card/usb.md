@@ -4,6 +4,7 @@ While the worst options for wireless, this is one that not many people can choos
 Things to keep in mind:
 
 * Features like AirDrop, Handoff, etc likely won't work
+* Not guaranteed to work 100%
 * Sleep can easily break
 * Need a separate adapter for Bluetooth
 * Most cards use a poorly made 32bit app to get wifi working(and you're reliant on the manufacturer to update their app for Catalina)
@@ -56,4 +57,26 @@ I've listed out all the chipsets that have been known good and you can see if yo
 * **RTL8812AU**:
 
    * Linksys WUSB6300
+   
+ # [WIFI-Dlink-Catalina-Panel](https://github.com/chris1111/WIFI-Dlink-Catalina-Panel)
+ 
+Just like [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover), WIFI-Dlink allows support for quite a few Mediatek/Ralink cards
+
+* RT3572
+* RT3072
+* RT3070
+* RT3573
+* MT7610
+* MT7610
+* MT7610
+* RT5370
+* RT2870
+* RT3071
+* RT2770
+* RT3573
+* RT5572
+* RT3573
+* RT3573
+* RT5572
+* RT3572
 
