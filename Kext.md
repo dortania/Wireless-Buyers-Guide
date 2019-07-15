@@ -13,7 +13,7 @@ Required for all non-apple manufactured wireless cards due to how Firmware is ha
 
 Used to support the BCM20702, generally not needed and required to build from source
 
-**[BT4LEContinuityFixup]()
+**[BT4LEContinuityFixup](https://github.com/acidanthera/BT4LEContinuityFixup)**
 
 Needed to fix odd Continuity issues which allow for the use of:
 * Handoff
@@ -21,7 +21,7 @@ Needed to fix odd Continuity issues which allow for the use of:
 * New Airdrop
 * Apple Watch Unlock
 
-**[AirPortAtheros40](https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip)
+**[AirPortAtheros40](https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip)**
 
 This kext is required for all Atheros chipsets that had support dropped in Mojave, these include:
 * AR9285
