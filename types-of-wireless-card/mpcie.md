@@ -1,10 +1,10 @@
-So mini PCIe is most useful for users with older systems generally being pre-skylake as those systems don't have M.2 based wireless. With mini PCIe you have a couple options:
+So mini PCIe is most useful for users with older systems generally being pre-skylake as those systems don't have M.2 based wireless. With mini PCIe you have a couple of options:
 
 * Half Sized mini PCIe
 * Full sized mini PCIe
 * Apple Airport Card adapted to a full sized mini PCIe
 
-For older laptop users you'll generally be limited to half sized mini PCIe wireless cards due to space constraints but for desktop users it's recommened to buy an Apple Airport Card with an adapter. Reason being is this avoids issues with PCI IDs not matching and not having drivers flags be set off, solutions are to force load the accompanying kext or modify the kext's PCI ID list to support your model.
+For older laptop users you'll generally be limited to half sized mini PCIe wireless cards due to space constraints but for desktop users, it's recommended to buy an Apple Airport Card with an adapter. The reason being is this avoids issues with PCI IDs not matching and not having drivers flags be set off, solutions are to force load the accompanying kext or modify the kext's PCI ID list to support your model.
 
 
 For users of the half height have a couple options:
@@ -30,7 +30,7 @@ For users of the half height have a couple options:
 
 # Older models(Not natively supported in Mojave)
 
-With these models you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There's a couple different kexts to do this but generally we recommend avoiding these wireless cards
+With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding these wireless cards
 
 * **BCM94322**4 HMS/HMB (ABGN, 2x2:2)
    * Dell DW1520
