@@ -8,12 +8,11 @@ Well, it's a bit complicated and involves looking at IOkit and how it handles di
 
 
 
-## Natively Supported chipsets
+## Supported chipsets
 
 * BCM94360CD
 * BCM94331CD
 * BCM94360CS2
-* BCM94352Z
 * BCM94352Z
 * BCM94350ZAE
 
