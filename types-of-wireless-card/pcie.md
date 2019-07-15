@@ -1,4 +1,4 @@
-By far the most popluar option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benifits of this is that as long as the harware works natively on a real mac it will work on without any kexts/framwork modifcations. With PCIe you have a couple options:
+By far the most popular option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benefits of this is that as long as the hardware works natively on a real mac it will work on without any kexts/framework modifications. With PCIe you have a couple of options:
 
 * Full sized PCIe Wireless card
 * Apple Airport Card adapted to a full sized PCIe adapter
@@ -37,7 +37,7 @@ Currently supported chipsets:
 
 # Older Models(Unsupported in Mojave)
 
-With these model you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There's a couple different kexts to do this but generally we recommend avoiding this card unless absolutly necessary
+With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding this card unless absolutely necessary
 
 * **Atheros 9380**:
    * TP-Link TL-WDN4800
