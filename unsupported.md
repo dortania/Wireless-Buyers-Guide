@@ -1,4 +1,4 @@
-With macOS there's a limited amount of supported hardware regardless of which cataogry and wireless cards are no different. 
+With macOS there's a limited amount of supported hardware regardless of which category and wireless cards are no different. 
 
 ## Natively Supported chipsets
 
@@ -19,7 +19,7 @@ High Sierra:
 
 # Unsupported Chipsets
 
-So for some reason people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list of all intel chips cause why not:
+So for some reason, people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list of all intel chips cause why not:
 
 
 Wireless AX
