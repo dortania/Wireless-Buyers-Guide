@@ -5,7 +5,7 @@ Things to keep in mind:
 
 * Features like AirDrop, Handoff, etc likely won't work
 * Sleep can easily break
-* Need a seperate adapter for Bluetooth
+* Need a separate adapter for Bluetooth
 * Most cards use a poorly made 32bit app to get wifi working(and you're reliant on the manufacturer to update their app for Catalina)
 
 
@@ -13,7 +13,7 @@ And with all these issues it's quite hard to recommend a USB wireless card but t
 
 # [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
-While not perfect this might just be as close as we can get to "good" USB wireless thanks to it being kept up-to date by [Chris1111](https://github.com/chris1111)(So no 32bit app crap) and supports a large variety of Chipsets. 
+While not perfect this might just be as close as we can get to "good" USB wireless thanks to it being kept up-to-date by [Chris1111](https://github.com/chris1111)(So no 32bit app crap) and supports a large variety of Chipsets. 
 
 
 I've listed out all the chipsets that have been known good and you can see if yours matches any of these chipsets
