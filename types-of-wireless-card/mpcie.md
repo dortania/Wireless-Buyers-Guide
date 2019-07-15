@@ -1,4 +1,4 @@
-So mini PCIe is most useful for users with older systems generally being pre-skylake as those systems don't have M.2 based wireless. With mini PCIe you have a couple of options:
+So mini PCIe is most useful for users with older systems that don't have M.2 based wireless. With mini PCIe you have a couple of options:
 
 * Half Sized mini PCIe
 * Full sized mini PCIe
