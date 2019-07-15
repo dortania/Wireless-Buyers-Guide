@@ -3,7 +3,7 @@
 So this is also a really bad idea but I accidentally found Express Card-based wireless cards searching for other cards:
 
 Up to High Sierra:
-* AR9280
+* **Atheros AR9280**
    * Ubiquiti Networks SR71-X
    
    
