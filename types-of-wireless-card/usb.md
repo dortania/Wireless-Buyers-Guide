@@ -59,9 +59,9 @@ I've listed out all the chipsets that have been known good and you can see if yo
    * Linksys WUSB6300
    
    
-# [WIFI-Dlink-Catalina-Panel](https://github.com/chris1111/WIFI-Dlink-Catalina-Panel)
+# [USB Wireless Utility](https://github.com/chris1111/USB-Wireless-Utility)
  
-Just like [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover), WIFI-Dlink allows support for quite a few Mediatek/Ralink cards
+Just like [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover), WIFI-Dlink allows support for quite a few Mediatek/Ralink cards but due to being a 32bit app is unsupported on AMD systems. There's a newer version for Catalina which is 64 bit based perfect for AMD systems as well: [WIFI-Dlink Catalina-Panel](https://github.com/chris1111/WIFI-Dlink-Catalina-Panel)
 
 * RT3572
 * RT3072
