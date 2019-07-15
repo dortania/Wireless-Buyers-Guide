@@ -5,22 +5,3 @@ So you've finally installed macOS onto your desktop/laptop/smart fridge but you 
 ## So why does my Bluetooth work yet Wifi doesn't?
 
 Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively\(usually with the loss of Handoff, Airdrop, etc\). Wifi, on the other hand, is quite a bit more complicated as there's per device/family firmware that needs to be loaded and so the Broadcom/Atheros Firmware obviously do nothing when in the presence of intel
-
-
-
-## Supported chipsets
-
-* BCM94360CD
-* BCM94331CD
-* BCM94360CS2
-* BCM94352Z
-* BCM94350ZAE
-
-High Sierra:
-
-* BCM943224
-* AR9285
-* AR9287
-* AR9280
-* AR9380
-
