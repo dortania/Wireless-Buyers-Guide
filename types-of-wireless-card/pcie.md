@@ -1,7 +1,10 @@
 By far the most popular option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benefits of this is that as long as the hardware works natively on a real mac it will work on without any kexts/framework modifications. With PCIe you have a couple of options:
 
+
+* Apple Airport Card adapted to a full sized PCIe adapter(Recommended)
+* Apple Airport Card adapted to M.2 B+M Key(same as what NVMe SSDs run off)
+* Apple Airport Card adapted to M.2 A+E Key(same as what intel wireless cards run off)
 * Full sized PCIe Wireless card
-* Apple Airport Card adapted to a full sized PCIe adapter
 
 Currently supported chipsets:
 
@@ -12,7 +15,14 @@ Currently supported chipsets:
 * BCM94352Z
 * BCM94350ZAE
 
-# Supported
+# What does an Airport adapted look like?
+
+![https://i.imgur.com/AUtNhiB.jpg](PCIe Adapter)
+![https://i.imgur.com/MNt8xqq.jpg](M.2 NGFF B+M Adapter)
+![https://i.imgur.com/NLUpEl3.jpg](M.2 NGFF A+E Adapter)
+
+
+# Supported(Full sized PCIe Wireless card)
 
 * **BCM94360CD**:
 
