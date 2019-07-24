@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Supported/Unsupported Chipsets](unsupported.md)
 * [When/What kexts to use](Kext.md)
+* [Airport Adapters](Airport.md)
 
 ## Types of wireless card
 
