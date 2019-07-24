@@ -10,7 +10,7 @@ For older laptop users you'll generally be limited to half sized mini PCIe wirel
 For users of the half height have a couple options:
 
 
-# Native:
+# Supported:
 
 * **BCM94360HMB** (ABGN+AC, BT 4.0, 3x3:3):
 
