@@ -14,15 +14,6 @@ Currently supported chipsets:
 * BCM94352Z
 * BCM94350ZAE
 
-# What does an Airport adapted look like?
-
-![PCIe Adapter](https://i.imgur.com/AUtNhiB.jpg)
-
-![M.2 NGFF B+M Adapter](https://i.imgur.com/MNt8xqq.jpg)
-
-![M.2 NGFF A+E Adapter](https://i.imgur.com/NLUpEl3.jpg)
-
-
 # Supported(Full sized PCIe Wireless card)
 
 * **BCM94360CD**:
