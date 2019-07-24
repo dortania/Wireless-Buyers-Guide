@@ -17,9 +17,9 @@ Currently supported chipsets:
 
 # What does an Airport adapted look like?
 
-![https://i.imgur.com/AUtNhiB.jpg](PCIe Adapter)
-![https://i.imgur.com/MNt8xqq.jpg](M.2 NGFF B+M Adapter)
-![https://i.imgur.com/NLUpEl3.jpg](M.2 NGFF A+E Adapter)
+![PCIe Adapter](https://i.imgur.com/AUtNhiB.jpg)
+![M.2 NGFF B+M Adapter](https://i.imgur.com/MNt8xqq.jpg)
+![M.2 NGFF A+E Adapter](https://i.imgur.com/NLUpEl3.jpg)
 
 
 # Supported(Full sized PCIe Wireless card)
