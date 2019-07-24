@@ -21,6 +21,8 @@ Needed to fix odd Continuity issues which allow for the use of:
 * New Airdrop
 * Apple Watch Unlock
 
+Generally unneeded so avoid use when you notice issues with your card
+
 **[AirPortAtheros40](https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip)**
 
 This kext is required for all Atheros chipsets that had support dropped in Mojave, these include:
