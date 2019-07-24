@@ -12,7 +12,6 @@ Currently supported chipsets:
 * BCM94331CD\(may need to force the kext to load for Catalina\)
 * BCM94360CS2
 * BCM94352Z
-* BCM94352Z
 * BCM94350ZAE
 
 # What does an Airport adapted look like?
