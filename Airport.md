@@ -2,9 +2,9 @@ So what are Airport adapters and why are they the preferred piece of hardware? W
 
 # What does an Airport adapted look like?
 
-![PCIe Adapter(Requires an extra USB port)](https://i.imgur.com/AUtNhiB.jpg)
+![PCIe Adapter(Requires an extra USB port for bluetooth)](https://i.imgur.com/AUtNhiB.jpg)
 
-![M.2 NGFF B+M Adapter(Requires an extra USB port)](https://i.imgur.com/MNt8xqq.jpg)
+![M.2 NGFF B+M Adapter(Requires an extra USB port for bluetooth)](https://i.imgur.com/MNt8xqq.jpg)
 
 ![M.2 NGFF A+E Adapter](https://i.imgur.com/NLUpEl3.jpg)
 
