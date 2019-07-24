@@ -16,15 +16,15 @@ Currently supported chipsets:
 
 # Supported(Full sized PCIe Wireless card)
 
-* **BCM94360CD**:
+* **BCM94360CD**(ABGN+AC):
 
-   * Fenvi FV T919
+   * Fenvi FV T919 (BT 4.0)
    * Fenvi AC1900\(no bluetooth\)
-   * TP-LINK Archer T9E AC1900
-   * TP-LINK Archer T8E
+   * TP-LINK Archer T9E AC1900\(no bluetooth\)
+   * TP-LINK Archer T8E\(no bluetooth\)
    * RNX-AC1900PCE\(no bluetooth\)
-   * ASUS PCE-AC66
-   * ASUS PCE-AC68
+   * ASUS PCE-AC66\(no bluetooth\)
+   * ASUS PCE-AC68\(no bluetooth\)
 
 * **BCM94360CS2**:
 
@@ -32,9 +32,9 @@ Currently supported chipsets:
 
 * **BCM94352**:
 
-   * TP-LINK Archer T6E
-   * Rosewill RNX-AC1300PCE
-   * ASUS PCE-AC56
+   * TP-LINK Archer T6E\(no bluetooth\)
+   * Rosewill RNX-AC1300PCE\(no bluetooth\)
+   * ASUS PCE-AC56\(no bluetooth\)
 
 
 # Older Models(Unsupported in Mojave)
