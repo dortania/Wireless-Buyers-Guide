@@ -19,7 +19,7 @@ Currently supported chipsets:
 * **BCM94360CD**(ABGN+AC):
 
    * Fenvi FV T919 (BT 4.0)
-   * Fenvi AC1900\(no bluetooth\)
+   * Fenvi AC1900\(no bluetooth, recently discontinued\)
    * TP-LINK Archer T9E AC1900\(no bluetooth\)
    * TP-LINK Archer T8E\(no bluetooth\)
    * RNX-AC1900PCE\(no bluetooth\)
