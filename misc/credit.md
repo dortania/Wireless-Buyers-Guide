@@ -2,8 +2,12 @@
 
 No good guide is made by one man, here's credit to those who've helped out:
 
-* [Midi]()
+* [Midi](https://github.com/midi1996)
    * [Hackintosh FAQ: Wifi](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility)
+   * Overall corrections
+   
+* [DhinakG](https://github.com/dhinakg)
+   * Corrections regarding DW1830
 
 Sources:
 
