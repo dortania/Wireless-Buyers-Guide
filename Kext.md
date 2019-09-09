@@ -31,6 +31,11 @@ This kext is required for all Atheros chipsets that had support dropped in Mojav
 * AR9280
 * AR9380
 
+To install the AirPortAtheros40, you'll need to copy it to Library/Extensions(**NOT** System/Library/Extensions) and then run the following command:
+```
+sudo chown -R root:wheel /L*/E*; sudo chmod -R 755 /L*/E*; sudo kextcache -i /
+```
+
 
 
 
