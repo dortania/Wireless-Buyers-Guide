@@ -26,11 +26,12 @@ Currently supported chipsets:
    * ASUS PCE-AC66\(no bluetooth\)
    * ASUS PCE-AC68\(no bluetooth\)
 
-* **BCM94360CS2**:
+* **BCM94360CS2**(ABGN+AC):
 
+   * Fenvi FV-HB1200(BT 4.0)
    * AWD Wireless LAN Card\(BCM94360CS2\)
 
-* **BCM94352**:
+* **BCM94352**(ABGN+AC):
 
    * TP-LINK Archer T6E\(no bluetooth\)
    * Rosewill RNX-AC1300PCE\(no bluetooth\)
@@ -39,7 +40,9 @@ Currently supported chipsets:
 
 # Older Models(Unsupported in Mojave)
 
-With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding this card unless absolutely necessary
+With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding this card unless absolutely necessary.
+
+**Note**: Injecting the kext into macOS Catalina is even more unstable
 
 * **Atheros 9380**:
    * TP-Link TL-WDN4800
