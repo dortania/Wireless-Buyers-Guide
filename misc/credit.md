@@ -10,6 +10,9 @@ No good guide is made by one man, here's credit to those who've helped out:
 * [DhinakG](https://github.com/dhinakg)
    * Corrections regarding DW1830
 
+* [Fewt](https://fewt.gitbook.io/laptopguide/)
+   * Added FV-HB1200
+
 Sources:
 
 * [Intel Wireless List](https://www.intel.ca/content/www/ca/en/support/articles/000005511/network-and-i-o/wireless-networking.html)
