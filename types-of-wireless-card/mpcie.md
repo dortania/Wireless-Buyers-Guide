@@ -30,7 +30,9 @@ For users of the half height have a couple options:
 
 # Older models(Not natively supported in Mojave)
 
-With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding these wireless cards
+With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding these wireless cards.
+
+**Note**: Injecting the kext into macOS Catalina is even more unstable
 
 * **BCM94322**4 HMS/HMB (ABGN, 2x2:2)
    * Dell DW1520
