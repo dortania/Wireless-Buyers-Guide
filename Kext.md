@@ -36,6 +36,7 @@ To install the AirPortAtheros40, you'll need to copy it to Library/Extensions(**
 sudo chown -R root:wheel /L*/E*; sudo chmod -R 755 /L*/E*; sudo kextcache -i /
 ```
 
+**Catalina users note**: This method no longer works without backporting the entire IO80211 framework, this is not idea for stability reasons
 
 
 
