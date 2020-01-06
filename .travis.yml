@@ -10,7 +10,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   name: Travis Build Bot
-  fqdn: laptop.hackintosh-guides.ml
+  fqdn:
   keep_history: true
   on:
     branch: master
@@ -18,4 +18,4 @@ deploy:
   # committer_from_gh: true
   # allow_empty_commit: true
   github_token:
-    secure: ejC7dHCPWU1fFYKoOiYOAwYv4tGMVXYCWkVjA1i8NGcioSgX0ZsHnJzMQ0+hCdPQmIXv/5lv/5W/KMpYaivgky/VYewOTxDCJi6PxhrO+15STUfjTtpEM8EfWHwzKrdzwwlZGLoSrL5RP1EfbHdohry+3R57pRwSuL7qZXOo+d6enqYFcjsia9pFxyPBla3Pjir8VZQZUfIej3o4Ll3Z9vfD+LqHFTVHZ7sKIBoGu/H8IhzNtOWFjtG05Evh8RXMgnVj7vebnIspAQ2VWtCT8T35NEKkUe+1pmRM/57HUSgSbWZlv39OQdekamOxYU5YtjEyfVdXpAfnBOoQSLBVc/ZCL9NwL4hT6CotZOspVwWPGOy7t3aLA8sADwB6rn4ybJ57R2BcHvjpQnKZEELmBdNbIviaIrvveDQXMYvuSY/Hjv0Tp5xZmRLddyU/M0vHjpmWPUnCFu4518bUoZhB8bhmh4NphMdpa71/RcR9ya2KfQEQ8yZP0P8qOnFahUeC5Zj++IcJhFAJ7gk86rVHte/613o64olO0EAuheJUuZGFqq+FlEA+ToEZkuD5f6bXUmKK/e4d9dkMo5l4/HfhXyT/hyGNnkmgF2RqCaI4brYu8cxuAwVaSqf5p8QjxSSTpNVfUyEjCsXYv1nm/5PDIfjwFrHpdG/UaUAo+VQzK2E=
+    secure: ZxfkPP/BK9S+mQW6gMfCNoSuyZQMUCgieONQz9JxaG4FmKrRwEmyW2A77YCWwULx5qVk99sQi4Ct0mhkhuvZtGKomEotZtRbPAYRDoREZAS6Yxv25iFM6Odii11zeyh0169p5d1+sg1J44RlmuOKwp0n4vBpTnIJwD7t8xHa70gA82vJ2p6GS1o/avL1qMbHAn+4LKk5gRrxpYbRfBNaHyu1EY5I16TOO1AZsY/npeAaW5Xl0F1bgC/9hRPxibkPJgvyN3YLPXVnUcbqbGeO+Bym5O5iK7R8Vp4W+jwa8VY7cSbVPW8IZVUgXJItgz0+GoQKDQwz81GcRzmsQtLOVo93MT610gzOgYJ0fV10R+vC5ZE7evwFnV9iVJ9+ipFrWHUMZ5RoaAaWrGwOvB6sNBY7ZDES7GIJ5Ea5+MNU2y0TfhOKnQj0ma+LaLfHlUmiRxh5xtpMokM+tEwuBsa6UKvj52UBQCTHN/CBQNJi2SJCH+wMFknRZtgjtn53BU9I6g+GYen+8C6O6CecWs3y0hkm0cI/D837u3124Nab1+QoP+Gm7a2iImZ3v73GK/+7yWF5ljfToE6YKXyljO2yk3Dsemau3N3gAPqgWuzH2e6x8tIAGjguBbXU2B1MxJGm7zeYAYWmhv+vtu1FZOOcLAGroHmljA5sH/i7/ZTTqJc=
