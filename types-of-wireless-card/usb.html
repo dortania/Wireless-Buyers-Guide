@@ -1,0 +1,443 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>USB · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../misc/credit.html" />
+    
+    
+    <link rel="prev" href="Express.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../unsupported.html">
+            
+                <a href="../unsupported.html">
+            
+                    
+                    Supported/Unsupported Chipsets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Kext.html">
+            
+                <a href="../Kext.html">
+            
+                    
+                    When/What kexts to use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Airport.html">
+            
+                <a href="../Airport.html">
+            
+                    
+                    Airport Adapters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Types of wireless card</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="pcie.html">
+            
+                <a href="pcie.html">
+            
+                    
+                    PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="mpcie.html">
+            
+                <a href="mpcie.html">
+            
+                    
+                    mini PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="m2.html">
+            
+                <a href="m2.html">
+            
+                    
+                    M.2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="Express.html">
+            
+                <a href="Express.html">
+            
+                    
+                    Express Card
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="usb.html">
+            
+                <a href="usb.html">
+            
+                    
+                    USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Misc</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../misc/credit.html">
+            
+                <a href="../misc/credit.html">
+            
+                    
+                    Credit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >USB</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>While the worst options for wireless, this is one that not many people can choose to avoid due to either their wireless cards being soldered or not wanting to break their warranty to replace their card. </p>
+<p>Things to keep in mind:</p>
+<ul>
+<li>Features like AirDrop, Handoff, etc likely won&apos;t work</li>
+<li>Not guaranteed to work 100%</li>
+<li>Sleep can easily break</li>
+<li>Need a separate adapter for Bluetooth</li>
+<li>Most cards use a poorly made 32bit app to get wifi working(and you&apos;re reliant on the manufacturer to update their app for Catalina)</li>
+</ul>
+<p>And with all these issues it&apos;s quite hard to recommend a USB wireless card but there still is hope:</p>
+<h1 id="wireless-usb-adapter-clover"><a href="https://github.com/chris1111/Wireless-USB-Adapter-Clover" target="_blank">Wireless-USB-Adapter-Clover</a></h1>
+<p>While not perfect this might just be as close as we can get to &quot;good&quot; USB wireless thanks to it being kept up-to-date by <a href="https://github.com/chris1111" target="_blank">Chris1111</a>(So no 32bit app crap) and supports a large variety of Chipsets. </p>
+<p>I&apos;ve listed out all the chipsets that have been known good and you can see if yours matches any of these chipsets</p>
+<ul>
+<li><p><strong>RTL8188CUS</strong>:</p>
+<ul>
+<li>Asus USB-N 10 Nano/N150</li>
+<li>TRENDnet N150 Micro</li>
+</ul>
+</li>
+<li><p><strong>RTL8192CU</strong>:</p>
+<ul>
+<li>EDIMAX- EW-7722UTn V2</li>
+<li>EDIMAX N300</li>
+</ul>
+</li>
+<li><p><strong>RTL8192EU</strong>:</p>
+<ul>
+<li>TL-WN823N v2</li>
+<li>TL-WN823N v3</li>
+<li>TL-WN821N v6</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>RTL8188EUS</strong>:</p>
+<ul>
+<li>TL-WN725N v3</li>
+<li>TL-WN722N v3</li>
+</ul>
+</li>
+<li><p><strong>RTL8811AU</strong>:</p>
+<ul>
+<li>Archer T2U NANO</li>
+</ul>
+</li>
+<li><p><strong>RTL8812BU</strong>:</p>
+<ul>
+<li>Archer T4U V3</li>
+</ul>
+</li>
+<li><p><strong>RTL8814AU</strong>:</p>
+<ul>
+<li>Archer T9UH V2</li>
+</ul>
+</li>
+<li><p><strong>RTL8812AU</strong>:</p>
+<ul>
+<li>Linksys WUSB6300</li>
+</ul>
+</li>
+</ul>
+<h1 id="usb-wireless-utility"><a href="https://github.com/chris1111/USB-Wireless-Utility" target="_blank">USB Wireless Utility</a></h1>
+<p>Just like <a href="https://github.com/chris1111/Wireless-USB-Adapter-Clover" target="_blank">Wireless-USB-Adapter-Clover</a>, WIFI-Dlink allows support for quite a few Mediatek/Ralink cards but due to being a 32bit app is unsupported on AMD systems. There&apos;s a newer version for Catalina which is 64 bit based perfect for AMD systems as well: <a href="https://github.com/chris1111/WIFI-Dlink-Catalina-Panel" target="_blank">WIFI-Dlink Catalina-Panel</a></p>
+<ul>
+<li>RT3572</li>
+<li>RT3072</li>
+<li>RT3070</li>
+<li>RT3573</li>
+<li>MT7610</li>
+<li>MT7610</li>
+<li>MT7610</li>
+<li>RT5370</li>
+<li>RT2870</li>
+<li>RT3071</li>
+<li>RT2770</li>
+<li>RT3573</li>
+<li>RT5572</li>
+<li>RT3573</li>
+<li>RT3573</li>
+<li>RT5572</li>
+<li>RT3572</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Express.html" class="navigation navigation-prev " aria-label="Previous page: Express Card">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../misc/credit.html" class="navigation navigation-next " aria-label="Next page: Credit">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"USB","level":"2.5","depth":1,"next":{"title":"Credit","level":"3.1","depth":1,"path":"misc/credit.md","ref":"misc/credit.md","articles":[]},"previous":{"title":"Express Card","level":"2.4","depth":1,"path":"types-of-wireless-card/Express.md","ref":"types-of-wireless-card/Express.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"search-plus":{},"addcssjs":{"css":[],"js":[]},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"types-of-wireless-card/usb.md","mtime":"2020-01-06T00:56:15.815Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-06T00:57:04.887Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+
+    </body>
+</html>
+
