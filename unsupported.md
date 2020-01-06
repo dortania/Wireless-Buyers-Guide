@@ -21,12 +21,12 @@ High Sierra:
 So for some reason, people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list of all intel chips cause why not:
 
 
-Wireless AX
+Intel Wireless AX
 
 * Intel® Wi-Fi 6 AX201
 * Intel® Wi-Fi 6 AX200
 
-Wireless AC
+Intel Wireless AC
 * Intel® Wireless-AC 9560
 * Intel® Wireless-AC 9462
 * Intel® Wireless-AC 9461
@@ -65,4 +65,3 @@ Wireless N
 * Intel® Wireless WiFi Link 5300AGN
 * Intel® Wireless WiFi Link 5350AGN
 * Intel® Wireless WiFi Link 5150AGN
-
