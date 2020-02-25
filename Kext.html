@@ -284,13 +284,30 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="when-and-what-kexts-to-use">When and what kexts to use?</h1>
-<p><strong><a href="https://github.com/acidanthera/AirportBrcmFixup" target="_blank">AirportBrcmFixup</a></strong></p>
-<p>This is needed to fix wifi on many broadcom cards, while not all of them need them it&apos;s generally required when using non-apple manufactured wireless cards. This also has the added functionality of injecting old broadcom kexts into newer versions of macOS</p>
-<p><strong><a href="https://github.com/RehabMan/OS-X-BrcmPatchRAM" target="_blank">BrcmPatchRAM</a></strong></p>
-<p>Required for all non-apple manufactured wireless cards due to how Firmware is handled</p>
-<p><strong><a href="https://github.com/RehabMan/OS-X-BrcmPatchRAM" target="_blank">BrcmBluetoothInjector</a></strong></p>
-<p>Used to support the BCM20702, generally not needed and required to build from source</p>
-<p><strong><a href="https://github.com/acidanthera/BT4LEContinuityFixup" target="_blank">BT4LEContinuityFixup</a></strong></p>
+<h2 id="airportbrcmfixup"><a href="https://github.com/acidanthera/AirportBrcmFixup" target="_blank">AirportBrcmFixup</a></h2>
+<p>This is needed to fix wifi on many broadcom cards, while not all of them need them it&apos;s generally required when using non-apple manufactured wireless cards. This also has the added functionality of injecting old broadcom kexts into newer versions of macOS.</p>
+<p>Note: </p>
+<ul>
+<li>Apple Airport and Fenvi cards do not need this kext</li>
+</ul>
+<h2 id="brcmpatchram"><a href="https://github.com/acidanthera/BrcmPatchRAM/releases" target="_blank">BrcmPatchRAM</a></h2>
+<p>Required for all non-apple manufactured wireless cards due to how Firmware is handled. This is actually a bundle of multiple kexts:</p>
+<ul>
+<li>BrcmBluetoothInjector </li>
+<li>BrcmFirmwareData </li>
+<li>BrcmPatchRAM fix:<ul>
+<li>BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)</li>
+<li>BrcmPatchRAM2 for 10.11-10.14</li>
+<li>BrcmPatchRAM for 10.10 or older</li>
+</ul>
+</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>Apple Airport and Fenvi cards do not need these kexts</li>
+<li>OpenCore order is alphebtical: Injector -&gt; Data -&gt; RAM</li>
+</ul>
+<h2 id="bt4lecontinuityfixup"><a href="https://github.com/acidanthera/BT4LEContinuityFixup" target="_blank">BT4LEContinuityFixup</a></h2>
 <p>Needed to fix odd Continuity issues which allow for the use of:</p>
 <ul>
 <li>Handoff</li>
@@ -299,7 +316,12 @@
 <li>Apple Watch Unlock</li>
 </ul>
 <p>Generally unneeded so avoid use when you notice issues with your card</p>
-<p><strong><a href="https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip" target="_blank">AirPortAtheros40</a></strong></p>
+<p>Note: </p>
+<ul>
+<li>Apple Airport and Fenvi cards shouldn&apos;t need this kext</li>
+<li>Continuity requires a Bluetooth 4.0 Low Energy supported card</li>
+</ul>
+<h2 id="airportatheros40"><a href="https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip" target="_blank">AirPortAtheros40</a></h2>
 <p>This kext is required for all Atheros chipsets that had support dropped in Mojave, these include:</p>
 <ul>
 <li>AR9285</li>
@@ -307,9 +329,16 @@
 <li>AR9280</li>
 <li>AR9380</li>
 </ul>
-<p>To install the AirPortAtheros40, you&apos;ll need to copy it to Library/Extensions(<strong>NOT</strong> System/Library/Extensions) and then run the following command:</p>
+<p>To install the AirPortAtheros40, you have 2 methods:</p>
+<ul>
+<li>Kext injection via bootloader</li>
+<li>Installation into macOS(Library/Extensions)</li>
+</ul>
+<p>The first method is recommended, the second should be avoided but may work better for some users. <strong>Test injection first</strong></p>
+<p>For macOS installation:</p>
+<p>You&apos;ll need to copy it to Library/Extensions(<strong>NOT</strong> System/Library/Extensions) and then run the following command:</p>
 <pre><code>sudo chown -R root:wheel /L*/E*; sudo chmod -R 755 /L*/E*; sudo kextcache -i /
-</code></pre><p><strong>Catalina users note</strong>: This method no longer works without backporting the entire IO80211 framework, this is not idea for stability reasons</p>
+</code></pre><p><strong>Catalina users note</strong>: These methods no longer works without backporting the entire IO80211 framework, this is not ideal for stability reasons</p>
 
                                 
                                 </section>
@@ -353,7 +382,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"When/What kexts to use","level":"1.3","depth":1,"next":{"title":"Airport Adapters","level":"1.4","depth":1,"path":"Airport.md","ref":"Airport.md","articles":[]},"previous":{"title":"Supported/Unsupported Chipsets","level":"1.2","depth":1,"path":"unsupported.md","ref":"unsupported.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"search-plus":{},"addcssjs":{"css":[],"js":[]},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"Kext.md","mtime":"2020-01-20T05:03:11.687Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-20T05:03:55.961Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"When/What kexts to use","level":"1.3","depth":1,"next":{"title":"Airport Adapters","level":"1.4","depth":1,"path":"Airport.md","ref":"Airport.md","articles":[]},"previous":{"title":"Supported/Unsupported Chipsets","level":"1.2","depth":1,"path":"unsupported.md","ref":"unsupported.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"search-plus":{},"addcssjs":{"css":[],"js":[]},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"Kext.md","mtime":"2020-02-25T20:41:50.852Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-25T20:42:38.655Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
