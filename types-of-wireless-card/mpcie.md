@@ -27,6 +27,19 @@ For users of the half height have a couple options:
    * Dell DW1550
    * HP TPC-Q013
    * Lenovo Lite-On WCBN606BH
+   
+   
+   
+All cards presented here require the following:
+* [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases)
+* [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
+   * BrcmBluetoothInjector 
+   * BrcmFirmwareData 
+   * BrcmPatchRAM fix:
+      * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
+      * BrcmPatchRAM2 for 10.11-10.14
+      * BrcmPatchRAM for 10.10 or older
+
 
 # Older models(Not natively supported in Mojave)
 

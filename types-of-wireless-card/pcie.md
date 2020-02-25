@@ -38,6 +38,17 @@ Currently supported chipsets:
    * ASUS PCE-AC56\(no bluetooth\)
 
 
+All cards presented here besides the Apple Airport and Fenvi cards require the following:
+* [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases)
+* [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
+   * BrcmBluetoothInjector 
+   * BrcmFirmwareData 
+   * BrcmPatchRAM fix:
+      * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
+      * BrcmPatchRAM2 for 10.11-10.14
+      * BrcmPatchRAM for 10.10 or older
+
+
 # Older Models(Unsupported in Mojave)
 
 With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding this card unless absolutely necessary.
