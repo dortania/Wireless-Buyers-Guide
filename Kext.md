@@ -67,3 +67,6 @@ sudo chown -R root:wheel /L*/E*; sudo chmod -R 755 /L*/E*; sudo kextcache -i /
 
 
 
+## [ATH9KFixup](https://github.com/chunnann/ATH9KFixup)
+
+To be paired with AirPortAtheros40 to fix support for many atheros cards, similar idea to AirportBrcmFixup
