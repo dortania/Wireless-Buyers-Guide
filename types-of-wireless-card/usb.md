@@ -8,6 +8,7 @@ Things to keep in mind:
 * Sleep can easily break
 * Need a separate adapter for Bluetooth
 * Most cards use a poorly made 32bit app to get wifi working(and you're reliant on the manufacturer to update their app for Catalina)
+* No Network support in recovery
 
 
 And with all these issues it's quite hard to recommend a USB wireless card but there still is hope:
