@@ -8,9 +8,14 @@ By far the most popular option for desktop users has been to buy an old Apple Ai
 
 Currently supported chipsets:
 
+* BCM943602CDP
+* BCM943602CD
 * BCM94360CD
 * BCM94331CD\(may need to force the kext to load for Catalina\)
 * BCM94360CS2
+* BCM943602CS
+* BCM94360CSAX
+* BCM94360CS
 * BCM94352Z
 * BCM94350ZAE
 

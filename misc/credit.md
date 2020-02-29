@@ -20,4 +20,5 @@ Sources:
 * [Tonymacx86's Broadcom Wifi/Bluetooth Guide](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/)
 * [WikiDevi](https://wikidevi.com/wiki/Main_Page)
 * [M.2 Interface](https://www.delock.de/infothek/M.2/M.2_e.html)
+* [Tonymacx86's Bluetooth list](https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/)
 

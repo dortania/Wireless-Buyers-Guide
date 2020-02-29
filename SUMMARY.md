@@ -15,5 +15,6 @@
 
 ## Misc
 
+* [Bluetooth](misc/bluetooth.md)
 * [Credit](misc/credit.md)
 
