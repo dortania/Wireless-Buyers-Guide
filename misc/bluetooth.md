@@ -12,7 +12,7 @@ Well I was orginally going to manually find every supported model but user [Mark
 
 (For the amount of work this boy saved me, he deserves a medal)
 
-## So why does my Bluetooth work my intel card?
+## So why does Bluetooth work on my intel card?
 
 Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively\(usually with the loss of Handoff, Airdrop, etc\). Wifi, on the other hand, is quite a bit more complicated as there's per device/family firmware that needs to be loaded and so the Broadcom/Atheros Firmware obviously do nothing when in the presence of intel
 
