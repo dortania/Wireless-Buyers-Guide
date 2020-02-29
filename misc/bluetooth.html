@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>mini PCIe · GitBook</title>
+        <title>Bluetooth · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -62,10 +62,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="m2.html" />
+    <link rel="next" href="credit.html" />
     
     
-    <link rel="prev" href="pcie.html" />
+    <link rel="prev" href="../types-of-wireless-card/usb.html" />
     
 
     </head>
@@ -153,9 +153,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="pcie.html">
+        <li class="chapter " data-level="2.1" data-path="../types-of-wireless-card/pcie.html">
             
-                <a href="pcie.html">
+                <a href="../types-of-wireless-card/pcie.html">
             
                     
                     PCIe
@@ -166,9 +166,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="mpcie.html">
+        <li class="chapter " data-level="2.2" data-path="../types-of-wireless-card/mpcie.html">
             
-                <a href="mpcie.html">
+                <a href="../types-of-wireless-card/mpcie.html">
             
                     
                     mini PCIe
@@ -179,9 +179,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="m2.html">
+        <li class="chapter " data-level="2.3" data-path="../types-of-wireless-card/m2.html">
             
-                <a href="m2.html">
+                <a href="../types-of-wireless-card/m2.html">
             
                     
                     M.2
@@ -192,9 +192,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="Express.html">
+        <li class="chapter " data-level="2.4" data-path="../types-of-wireless-card/Express.html">
             
-                <a href="Express.html">
+                <a href="../types-of-wireless-card/Express.html">
             
                     
                     Express Card
@@ -205,9 +205,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5" data-path="usb.html">
+        <li class="chapter " data-level="2.5" data-path="../types-of-wireless-card/usb.html">
             
-                <a href="usb.html">
+                <a href="../types-of-wireless-card/usb.html">
             
                     
                     USB
@@ -225,9 +225,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../misc/bluetooth.html">
+        <li class="chapter active" data-level="3.1" data-path="bluetooth.html">
             
-                <a href="../misc/bluetooth.html">
+                <a href="bluetooth.html">
             
                     
                     Bluetooth
@@ -238,9 +238,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../misc/credit.html">
+        <li class="chapter " data-level="3.2" data-path="credit.html">
             
-                <a href="../misc/credit.html">
+                <a href="credit.html">
             
                     
                     Credit
@@ -281,7 +281,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >mini PCIe</a>
+        <a href=".." >Bluetooth</a>
     </h1>
 </div>
 
@@ -296,98 +296,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>So mini PCIe is most useful for users with older systems that don&apos;t have M.2 based wireless. With mini PCIe you have a couple of options:</p>
+                                <h1 id="bluetooth-support">Bluetooth Support</h1>
+<p>So with Bluetooth in macOS, it can become quite confusing on what actually is supported and what&apos;s not.</p>
+<h2 id="supported-bluetooth-chipset">Supported bluetooth chipset</h2>
+<p>Well I was orginally going to manually find every supported model but user <a href="https://www.tonymacx86.com/members/markvillacampa.1790473/" target="_blank">MarkVillacampa</a> has done this for us! Yay I get to be lazy for once!</p>
 <ul>
-<li>Half Sized mini PCIe</li>
-<li>Full sized mini PCIe</li>
-<li>Apple Airport Card adapted to a full sized mini PCIe</li>
+<li><strong><a href="https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/" target="_blank">Bluetooth List</a></strong></li>
 </ul>
-<p>For older laptop users you&apos;ll generally be limited to half sized mini PCIe wireless cards due to space constraints but for desktop users, it&apos;s recommended to buy an Apple Airport Card with an adapter. The reason being is this avoids issues with PCI IDs not matching and not having drivers flags be set off, solutions are to force load the accompanying kext or modify the kext&apos;s PCI ID list to support your model.</p>
-<p>For users of the half height have a couple options:</p>
-<h1 id="supported">Supported:</h1>
+<p>(For the amount of work this boy saved me, he deserves a medal)</p>
+<h2 id="so-why-does-my-bluetooth-work-my-intel-card">So why does my Bluetooth work my intel card?</h2>
+<p>Well, it&apos;s a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively(usually with the loss of Handoff, Airdrop, etc). Wifi, on the other hand, is quite a bit more complicated as there&apos;s per device/family firmware that needs to be loaded and so the Broadcom/Atheros Firmware obviously do nothing when in the presence of intel</p>
+<p>So if you rebooted from Windows into macOS, the firmware on the card may have stuck on allowing you temporary bluetooth support on you&apos;re card. To make sure this sticks around, you can use a firmware injecting kext like that found on the <a href="https://github.com/zxystd/IntelBluetoothFirmware" target="_blank">IntelBluetoothFirmware repo</a></p>
+<h2 id="bluetooth-in-the-bios">Bluetooth in the BIOS</h2>
+<p>So to support Bluetooth in the BIOS, you&apos;ll need a Bluetooth device that supports HID Proxy. The idea of HID proxy is to create a minimal bluetooth stack that is then used into tricking the BIOS into thinking your bluetooth keyboard is actually a USB one, as there aren&apos;t any firmwares that actually implement Bluetooth.</p>
+<p>All of Apple&apos;s cards natively support this feature but you&apos;ll need to search on a case-by-case basis with other devices</p>
+<h2 id="retaining-bluetooth-keys-between-oses">Retaining Bluetooth keys between OSes</h2>
+<p>This is mainly for devices that only have 1 Bluetooth profile which can be a bit frustrating when switching between OSes, we&apos;ll our local Frewt boll has saved us again!</p>
 <ul>
-<li><p><strong>BCM94360HMB</strong> (ABGN+AC, BT 4.0, 3x3:3):</p>
-<ul>
-<li>AzureWave AW-CB160H</li>
-<li>Alpha Networks WMC-AC01</li>
-<li>Arcadyan WN8833B-AC</li>
-<li>Gemtek WMDB-150AC</li>
-<li>Unex DAXB-81</li>
-<li>Wistron NeWeb DNXB-C1</li>
-</ul>
-</li>
-<li><p><strong>BCM94352HMB</strong> (ABGN+AC,BT 4.0, 2x2:2):</p>
-<ul>
-<li>AzureWave AW-CE123H</li>
-<li>Dell DW1550</li>
-<li>HP TPC-Q013</li>
-<li>Lenovo Lite-On WCBN606BH</li>
-</ul>
-</li>
-</ul>
-<p>All cards presented here require the following:</p>
-<ul>
-<li><a href="https://github.com/acidanthera/AirportBrcmFixup/releases" target="_blank">AirportBrcmFixup</a></li>
-<li><a href="https://github.com/acidanthera/BrcmPatchRAM/releases" target="_blank">BrcmPatchRAM</a><ul>
-<li>BrcmBluetoothInjector </li>
-<li>BrcmFirmwareData </li>
-<li>BrcmPatchRAM fix:<ul>
-<li>BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)</li>
-<li>BrcmPatchRAM2 for 10.11-10.14</li>
-<li>BrcmPatchRAM for 10.10 or older</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="older-modelsnot-natively-supported-in-mojave">Older models(Not natively supported in Mojave)</h1>
-<p>With these models, you&apos;ll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding these wireless cards.</p>
-<p><strong>Note</strong>: Injecting the kext into macOS Catalina is even more unstable</p>
-<ul>
-<li><p><strong>BCM94322</strong>4 HMS/HMB (ABGN, 2x2:2)</p>
-<ul>
-<li>Dell DW1520</li>
-<li>HP Gemtek WMIB-275N </li>
-<li>Lenovo Gemtek WMIB-275N</li>
-<li>Pegatron UPWL6024</li>
-</ul>
-</li>
-<li><p><strong>AR9280</strong> (ABGN, 2x2:2)</p>
-<ul>
-<li>Atheros AR5BHB92</li>
-<li>Atheros AR5BXB92</li>
-<li>AzureWave AW-NE772</li>
-<li>AzureWave AW-NE773</li>
-<li>Compex WLE200N5-23-ESD</li>
-<li>Compex WLE200NX</li>
-<li>Dell DW1515</li>
-<li>HP U98Z044</li>
-<li>HP Lite-On WN6502AH</li>
-<li>Silex SX-PCEAN</li>
-<li>SparkLAN WPEA-110N</li>
-<li>SparkLAN WPEA-111N</li>
-<li>Ubiquiti Networks SR71-E</li>
-<li>Unex DNXA-92</li>
-</ul>
-</li>
-<li><p><strong>AR9380</strong> (ABGN, 3x3:3)</p>
-<ul>
-<li>Alpha Networks WMC-ND02</li>
-<li>Killer Wireless-N 1103</li>
-<li>Atheros AR5BHB112</li>
-<li>Atheros AR5BXB112</li>
-<li>Compex WLE300N5-22 7A0000</li>
-<li>Compex WLE300NX 6A0000</li>
-<li>HP U98Z081</li>
-<li>JJPlus JWX6051</li>
-<li>Lite-On WN6508A</li>
-<li>SparkLAN WPEA-127N</li>
-<li>SparkLAN WPEA-128N</li>
-<li>Tehnoetic TET-N450DB</li>
-<li>Vikings Atheros450</li>
-<li>Wistron NeWeb DNXA-G1</li>
-</ul>
-</li>
+<li><strong><a href="https://fewtarius.gitbook.io/laptopguide/extras/dual-booting-with-bluetooth-devices" target="_blank">Dual Booting with Bluetooth Devices</a></strong></li>
 </ul>
 
                                 
@@ -416,12 +342,12 @@
 
             
                 
-                <a href="pcie.html" class="navigation navigation-prev " aria-label="Previous page: PCIe">
+                <a href="../types-of-wireless-card/usb.html" class="navigation navigation-prev " aria-label="Previous page: USB">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="m2.html" class="navigation navigation-next " aria-label="Next page: M.2">
+                <a href="credit.html" class="navigation navigation-next " aria-label="Next page: Credit">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -432,7 +358,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mini PCIe","level":"2.2","depth":1,"next":{"title":"M.2","level":"2.3","depth":1,"path":"types-of-wireless-card/m2.md","ref":"types-of-wireless-card/m2.md","articles":[]},"previous":{"title":"PCIe","level":"2.1","depth":1,"path":"types-of-wireless-card/pcie.md","ref":"types-of-wireless-card/pcie.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"search-plus":{},"addcssjs":{"css":[],"js":[]},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"types-of-wireless-card/mpcie.md","mtime":"2020-02-29T05:39:56.449Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-29T05:40:41.984Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bluetooth","level":"3.1","depth":1,"next":{"title":"Credit","level":"3.2","depth":1,"path":"misc/credit.md","ref":"misc/credit.md","articles":[]},"previous":{"title":"USB","level":"2.5","depth":1,"path":"types-of-wireless-card/usb.md","ref":"types-of-wireless-card/usb.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"search-plus":{},"addcssjs":{"css":[],"js":[]},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"misc/bluetooth.md","mtime":"2020-02-29T05:39:56.449Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-29T05:40:41.984Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
