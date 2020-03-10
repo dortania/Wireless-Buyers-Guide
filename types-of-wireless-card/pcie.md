@@ -34,7 +34,7 @@ Currently supported chipsets:
 * **BCM94360CS2**(ABGN+AC):
 
    * Fenvi FV-HB1200(BT 4.0)
-   * AWD Wireless LAN Card\(BCM94360CS2\)
+   * AWD Wireless LAN Card\(No Bluetooth\)
 
 * **BCM94352**(ABGN+AC):
 
@@ -58,7 +58,7 @@ All cards presented here besides the Apple Airport and Fenvi cards require the f
 
 With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding this card unless absolutely necessary.
 
-**Note**: Injecting the kext into macOS Catalina is even more unstable
+**Note**: Injecting the kext into macOS Catalina is even more unstable, **highly encouraged to upgrade**
 
 * **Atheros 9380**:
    * TP-Link TL-WDN4800
@@ -70,7 +70,7 @@ With these models, you'll need to reinject the old plugin your wireless card use
 * **Atheros AR9287**:
    * Nexxt Solutions Saros 300 (APLDT300N1)
    * TP-LINK TL-WN881ND
-* **AR9285**:
+* **Atheros AR9285**:
    * AzureWave AW-NE106
    * Rosewill RNX-N150PCe v1
    * SMC SMCWPCIeS-N

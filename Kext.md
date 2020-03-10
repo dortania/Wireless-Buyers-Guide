@@ -20,7 +20,7 @@ Required for all non-apple manufactured wireless cards due to how Firmware is ha
 
 Note:
 * Apple Airport and Fenvi cards do not need these kexts
-* OpenCore order is alphebtical: Injector -> Data -> RAM
+* OpenCore order is alphabetical: Injector -> Data -> RAM
 
 
 
