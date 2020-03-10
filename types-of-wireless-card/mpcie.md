@@ -6,9 +6,14 @@ So mini PCIe is most useful for users with older systems that don't have M.2 bas
 
 For older laptop users you'll generally be limited to half sized mini PCIe wireless cards due to space constraints but for desktop users, it's recommended to buy an Apple Airport Card with an adapter. The reason being is this avoids issues with PCI IDs not matching and not having drivers flags be set off, solutions are to force load the accompanying kext or modify the kext's PCI ID list to support your model.
 
+The other thing to note with mini PCIe is that some vendors have a whitelist on wireless cards installed, speciifcally that only their brand of cards will work. The system **won't even post** with a non-branded one installed, the main culprits:
 
-For users of the half height have a couple options:
+* Lenovo(7th gen and older)
+* Toshiba
+* HP(3rd gen and older)
+* Compaq
 
+There are some work arounds with [BIOS mods](https://medium.com/@p0358/removing-wlan-wwan-bios-whitelist-on-a-lenovo-laptop-to-use-a-custom-wi-fi-card-f6033a5a5e5a), though be careful as poor patching can in fact **brick your device**
 
 # Supported:
 

@@ -5,16 +5,16 @@ So with Bluetooth in macOS, it can become quite confusing on what actually is su
 
 ## Supported bluetooth chipset
 
-Well I was orginally going to manually find every supported model but user [MarkVillacampa](https://www.tonymacx86.com/members/markvillacampa.1790473/) has done this for us! Yay I get to be lazy for once!
+Well I was orginally going to manually find every supported model but user [MarkVillacampa](https://www.tonymacx86.com/members/markvillacampa.1790473/) has done a great job already so I'll link to his findings
 
 * **[Bluetooth List](https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/)**
 
 
-(For the amount of work this boy saved me, he deserves a medal)
+**Asus and Lenovo note**: On 7th gen and newer chipsets, bluetooth has been intergrated into the PCH and these OEMS don't have any USB rails wired off of their A/E slots. This means that you'll need to either solder new headers for bluetooth on your motherboard or route a USB cable to an existing port
 
 ## So why does Bluetooth work on my intel card?
 
-Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively\(usually with the loss of Handoff, Airdrop, etc\). Wifi, on the other hand, is quite a bit more complicated as there's per device/family firmware that needs to be loaded and so the Broadcom/Atheros Firmware obviously do nothing when in the presence of intel
+Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively\(usually with the loss of Handoff, Airdrop, etc\). Wifi, on the other hand, is quite a bit more complicated as there needs to be explicit support in the IO80211 family for the device so only Broadcom/Atheros cards have any chance of working
 
 So if you rebooted from Windows into macOS, the firmware on the card may have stuck on allowing you temporary bluetooth support on you're card. To make sure this sticks around, you can use a firmware injecting kext like that found on the [IntelBluetoothFirmware repo](https://github.com/zxystd/IntelBluetoothFirmware)
 
