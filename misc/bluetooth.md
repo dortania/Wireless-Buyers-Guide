@@ -16,7 +16,7 @@ Well I was orginally going to manually find every supported model but user [Mark
 
 Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively\(usually with the loss of Handoff, Airdrop, etc\). Wifi, on the other hand, is quite a bit more complicated as there needs to be explicit support in the IO80211 family for the device so only Broadcom/Atheros cards have any chance of working
 
-So if you rebooted from Windows into macOS, the firmware on the card may have stuck on allowing you temporary bluetooth support on you're card. To make sure this sticks around, you can use a firmware injecting kext like that found on the [IntelBluetoothFirmware repo](https://github.com/zxystd/IntelBluetoothFirmware)
+So if you rebooted from Windows into macOS, the firmware on the card may have stuck on allowing you temporary bluetooth support on your'stve card. To make sure this sticks around, you can use a firmware injecting kext like that found on the [IntelBluetoothFirmware repo](https://github.com/zxystd/IntelBluetoothFirmware)
 
 ## Bluetooth in the BIOS
 
