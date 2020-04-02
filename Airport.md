@@ -5,15 +5,18 @@ Best part, **no kexts needed!**
 
 # Which cards shipped with what?
 
+**Socketed cards**: Ones you can buy and install yourself
+
 * BCM943602CDP
    * iMac16,x
-   * iMac17,x
+   * iMac17,1
    * iMac18,x(Though soldered and different Bluetooth module)
 * BCM943602CD
    * No clue
 * BCM94360CD
    * iMac14,x
    * iMac15,x
+   * MacPro6,1
 * BCM94331CD
    * iMac13,x
 * BCM94360CS2
@@ -27,10 +30,22 @@ Best part, **no kexts needed!**
    * MacBookPro11,x
 * BCM94360CSAX
    * MacBookPro10,x
-* BCM94352Z
-   * Never used
-* BCM94350ZAE
-   * Never used
+* BCM94350
+   * MacBook8,1
+   * MacBookPro13,x
+   * MacBookPro14,x
+
+**Solder/proprietary cards**: Apple's custom cards that no one else has
+
+* BCM4364
+   * iMac19,x
+   * iMacPro1,1
+   * MacPro7,1
+   * MacMini8,1
+   * MacBookPro15,x
+
+* BCM4355
+   * MacBookAir8,1
 
 # What does an Airport adapted look like?
 
