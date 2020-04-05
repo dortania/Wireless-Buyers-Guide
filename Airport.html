@@ -301,61 +301,57 @@
 <h1 id="which-cards-shipped-with-what">Which cards shipped with what?</h1>
 <p><strong>Socketed cards</strong>: Ones you can buy and install yourself</p>
 <ul>
-<li>BCM943602CDP<ul>
+<li>BCM943602CDP(Wifi) + 20703A1(Bluetooth)<ul>
 <li>iMac16,x</li>
 <li>iMac17,1</li>
-<li>iMac18,x(Though soldered and different Bluetooth module)</li>
+<li>iMac18,x(Different Bluetooth module, 20703A2)</li>
 </ul>
 </li>
-<li>BCM943602CD<ul>
-<li>No clue</li>
-</ul>
-</li>
-<li>BCM94360CD<ul>
+<li>BCM94360CD(Wifi) + 20702B0(Bluetooth)<ul>
 <li>iMac14,x</li>
 <li>iMac15,x</li>
 <li>MacPro6,1</li>
 </ul>
 </li>
-<li>BCM94331CD<ul>
+<li>BCM94331CD(Wifi) + BRCM20702(05AC:828b, Not sure on Bluetooth chipset name)<ul>
 <li>iMac13,x</li>
 </ul>
 </li>
-<li>BCM94360CS2<ul>
+<li>BCM94360CS2(Wifi) + BRCM20702(05AC:821f, Not sure on Bluetooth chipset name)<ul>
 <li>MacBookAir5,x</li>
 <li>MacBookAir6,x</li>
 <li>MacBookAir7,x</li>
 </ul>
 </li>
-<li>BCM943602CS<ul>
-<li>MacBookPro12,x</li>
+<li>BCM943602CS(Wifi) + 20703A1(Bluetooth)<ul>
+<li>MacBookPro12,x </li>
 </ul>
 </li>
-<li>BCM94360CS<ul>
-<li>MacMini7,x</li>
+<li>BCM94360CS(Wifi) + 20702B0(Bluetooth)<ul>
+<li>MacMini7,x </li>
 <li>MacBookPro11,x</li>
 </ul>
 </li>
-<li>BCM94360CSAX<ul>
+<li>BCM94360CSAX + BRCM20702(05AC:828c, Not sure on Bluetooth  chipset name)<ul>
 <li>MacBookPro10,x</li>
 </ul>
 </li>
 <li>BCM94350<ul>
-<li>MacBook8,1</li>
-<li>MacBookPro13,x</li>
-<li>MacBookPro14,x</li>
+<li>MacBook8,1 - 4350C1</li>
+<li>MacBookPro13,x - 20703A2</li>
+<li>MacBookPro14,x - 4350</li>
 </ul>
 </li>
 </ul>
-<p><strong>Solder/proprietary cards</strong>: Apple&apos;s custom cards that no one else has</p>
+<p><strong>Solder/proprietary cards</strong>: Apple&apos;s custom cards that no one else has, specifically called SOCs from Broadcom</p>
 <ul>
-<li><p>BCM4364</p>
+<li><p>BCM4364(Wifi) + 4364B0(Bluetooth)</p>
 <ul>
 <li>iMac19,x</li>
-<li>iMacPro1,1</li>
-<li>MacPro7,1</li>
 <li>MacMini8,1</li>
 <li>MacBookPro15,x</li>
+<li>iMacPro1,1 - 4364(Bluetooth)</li>
+<li>MacPro7,1- 4364B3(Bluetooth)</li>
 </ul>
 </li>
 <li><p>BCM4355</p>
@@ -412,7 +408,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Airport Adapters","level":"1.4","depth":1,"next":{"title":"PCIe","level":"2.1","depth":1,"path":"types-of-wireless-card/pcie.md","ref":"types-of-wireless-card/pcie.md","articles":[]},"previous":{"title":"When/What kexts to use","level":"1.3","depth":1,"path":"Kext.md","ref":"Kext.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"search-plus":{},"addcssjs":{"css":[],"js":[]},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"Airport.md","mtime":"2020-04-02T00:05:24.762Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-02T00:06:17.325Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Airport Adapters","level":"1.4","depth":1,"next":{"title":"PCIe","level":"2.1","depth":1,"path":"types-of-wireless-card/pcie.md","ref":"types-of-wireless-card/pcie.md","articles":[]},"previous":{"title":"When/What kexts to use","level":"1.3","depth":1,"path":"Kext.md","ref":"Kext.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":2},"search-plus":{},"addcssjs":{"css":[],"js":[]},"highlight":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"Airport.md","mtime":"2020-04-05T00:40:54.575Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-05T00:41:45.981Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
