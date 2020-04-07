@@ -45,7 +45,7 @@ Best part, **no kexts needed!**
 * BCM4355
    * MacBookAir8,1
 
-# What does an Airport adapted look like?
+# What does an Airport adapter look like?
 
 ![PCIe Adapter(Requires an extra USB port for bluetooth)](https://i.imgur.com/AUtNhiB.jpg)
 
