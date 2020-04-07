@@ -1,10 +1,16 @@
- {
-    "plugins": ["theme-default", "-lunr", "-search", "search-plus", "addcssjs"],
+{
+    "plugins": ["theme-default", "-lunr", "-search", "search-plus", "addcssjs", "favicon-plus", "github-edit", "anchors", "last-modified"],
     "pluginsConfig": {
         "fontsettings": {
             "theme":  "night",
             "family": "sans"
-        }
+        },
+        "github-edit": {
+            "repo": "khronokernel/Opencore-Vanilla-Desktop-Guide",
+            "branch": "master"
+        },
+        "favicon": "/icons/favicon.ico",
+        "output": "_book"
     },
     "links": {
         "sharing": {
