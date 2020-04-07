@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Wireless Buyers Guide](README.md)
 * [Supported/Unsupported Chipsets](unsupported.md)
 * [When/What kexts to use](Kext.md)
 * [Airport Adapters](Airport.md)
