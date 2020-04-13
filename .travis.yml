@@ -12,13 +12,13 @@ deploy:
   local_dir: _book
   provider: pages
   skip_cleanup: true
-  name: Travis Build Bot
+  name: Dortania Bot
+  email: bot@dortania.ml
   fqdn: wifi.dortania.ml
   keep_history: true
   on:
     branch: master
   target_branch: gh-pages
-  committer_from_gh: false
   # allow_empty_commit: true
   verbose: true
   deployment_file: true
