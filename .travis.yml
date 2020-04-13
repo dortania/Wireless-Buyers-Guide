@@ -16,6 +16,7 @@ deploy:
   committer_from_gh: true
   fqdn: wifi.dortania.ml
   keep_history: true
+  verbose: true
   on:
     branch: master
   commit_message: "%{git_commit_msg}"
