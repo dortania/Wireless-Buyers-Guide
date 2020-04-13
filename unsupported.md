@@ -3,6 +3,7 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 ## Supported chipsets
 
 * BCM94360CD
+* BCM94360NG
 * BCM94331CD(May require you to force load kext when running Catalina)
 * BCM94360CS2
 * BCM94352Z
