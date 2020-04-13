@@ -18,7 +18,9 @@ deploy:
   on:
     branch: master
   target_branch: gh-pages
-  # committer_from_gh: true
+  committer_from_gh: false
   # allow_empty_commit: true
+  verbose: true
+  deployment_file: true
   github_token:
     secure: XGHGeYoCT/EtGen5EFR7pof23H9rJOWH/avZh6IS3nZhA5+hxL3rTgeOk47kfnChMxP7jgYPwz4OiZ4qq4rLfB4wh+NFpJOHr34ml9bO25cI512HOV5RkssChW3twF2Q5abHPITZPp0hieVhMr5IwjpAoIyY4xSte7yVEHVxxYwirFQzE5kGTfJUK4FREHxG104miJhWEighQkTP/AEsKqnrIZgpvLsIKU66U9JQCY76QcmEZG4bT17CTUAPTX1711yXf+auECGWO9xxgDuB4rgicU5TYOyvJVpmKP44QosiUn71namrrIVDDsuvD8C4hLHuwqDGf5+PPE5ShiVew5yGi2YiSTfXiLn2K4LO4LUaYit4wsBC8Cg0FZzAnEmc7HApQHM34reWsa7k8TMikYTPWmhwNTmKHSIlt+eMJujvvqBv+iz+IvIp7w4gMIEA8UYOmI3gy5pk3oG87fBGAMS11yqeqigUGzH7RjI+VqEUYCDv8xQRbfLs/XwqrBY/+A7ouyzAuwtKGQtfdJ9XYt3eNdwPrb+Wr6Juf7FKNglV5YanUcr/1sYK6bXMMg/dj2lYDXQ3K6sais90vhRN4OTN8N9BH9wviHy3dyVpN5LJZ4D6VT7sUZ1SVaA6B7Ab+evM8ofv7zED9e2i8kG+W+YxrZhAObNqEWQ45AAzxLg=
