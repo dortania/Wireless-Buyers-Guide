@@ -10,9 +10,9 @@ script:
 - cp icons/* _book/gitbook/images
 deploy:
   local_dir: _book
-  provider: pages:git
+  provider: pages
   edge: true
-  skip_cleanup: true
+  cleanup: false
   committer_from_gh: true
   fqdn: wifi.dortania.ml
   keep_history: true
