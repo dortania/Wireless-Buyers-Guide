@@ -2,7 +2,7 @@
 
 ## [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
 
-This is needed to fix wifi on many broadcom cards, while not all of them need them it's generally required when using non-apple manufactured wireless cards. This also has the added functionality of injecting old broadcom kexts into newer versions of macOS.
+This is needed to fix wifi on many Broadcom cards, while not all of them need them it's generally required when using non-apple manufactured wireless cards. This also has the added functionality of injecting old Broadcom kexts into newer versions of macOS.
 
 Note: 
 * Apple Airport and Fenvi cards do not need this kext
