@@ -13,7 +13,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   committer_from_gh: true
-  fqdn: wifi.dortania.ml
   keep_history: true
   on:
     branch: master
