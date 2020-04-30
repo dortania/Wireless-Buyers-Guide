@@ -318,64 +318,71 @@
                                 <section class="normal markdown-section">
                                 
                                 <blockquote>
-<p><em>Last modified: Tue Apr 14 2020 16:02:01 GMT+0000 (Coordinated Universal Time)</em></p>
+<p><em>Last modified: Thu Apr 30 2020 01:57:16 GMT+0000 (Coordinated Universal Time)</em></p>
 </blockquote>
 <p>So what are Airport adapters and why are they the preferred piece of hardware? Well, they&apos;re genuine Apple Wireless cards pulled from MacBooks and iMacs meaning no extra configurations/kexts are required to get this hardware up and running. The main issue is that they require an adapter to PC hardware and are generally bulkier making them unfavourable in laptops but perfect for desktops.</p>
 <p>Best part, <strong>no kexts needed!</strong></p>
+<ul>
+<li>Note: When buying a Wifi card and an adapter, make sure the antenna sockets match up, there are 2 main types of sockets:<ul>
+<li>MHF4: Commonly used on M.2 and Apple&apos;s laptop wifi cards</li>
+<li>U.FL: Commonly used on mPCIe and Apple&apos;s desktop wifi cards</li>
+</ul>
+</li>
+</ul>
 <h1 id="which-cards-shipped-with-what"><a name="which-cards-shipped-with-what" class="plugin-anchor" href="#which-cards-shipped-with-what"><i class="fa fa-link" aria-hidden="true"></i></a>Which cards shipped with what?</h1>
 <p><strong>Socketed cards</strong>: Ones you can buy and install yourself</p>
 <ul>
-<li>BCM943602CDP(Wifi) + 20703A1(Bluetooth)<ul>
+<li>BCM943602CDP(Wifi) + 20703A1(Bluetooth 4.0) + U.FL Connector<ul>
 <li>iMac16,x</li>
 <li>iMac17,1</li>
-<li>iMac18,x(Different Bluetooth module, 20703A2)</li>
+<li>iMac18,x(Different Bluetooth module, 20703A2, Bluetooth 4.2)</li>
 </ul>
 </li>
-<li>BCM94360CD(Wifi) + 20702B0(Bluetooth)<ul>
+<li>BCM94360CD(Wifi) + 20702B0(Bluetooth 4.0) + U.FL Connector<ul>
 <li>iMac14,x</li>
 <li>iMac15,x</li>
 <li>MacPro6,1</li>
 </ul>
 </li>
-<li>BCM94331CD(Wifi) + BRCM20702(05AC:828b, Not sure on Bluetooth chipset name)<ul>
+<li>BCM94331CD(Wifi) + BRCM20702(05AC:828b, Bluetooth 4.0) + U.FL Connector<ul>
 <li>iMac13,x</li>
 </ul>
 </li>
-<li>BCM94360CS2(Wifi) + BRCM20702(05AC:821f, Not sure on Bluetooth chipset name)<ul>
+<li>BCM94360CS2(Wifi) + BRCM20702(05AC:821f, Bluetooth 4.0) + MHF4 Connector<ul>
 <li>MacBookAir5,x</li>
 <li>MacBookAir6,x</li>
 <li>MacBookAir7,x</li>
 </ul>
 </li>
-<li>BCM943602CS(Wifi) + 20703A1(Bluetooth)<ul>
+<li>BCM943602CS(Wifi) + 20703A1(Bluetooth 4.0) + MHF4 Connector<ul>
 <li>MacBookPro12,x </li>
 </ul>
 </li>
-<li>BCM94360CS(Wifi) + 20702B0(Bluetooth)<ul>
+<li>BCM94360CS(Wifi) + 20702B0(Bluetooth 4.0) + MHF4 Connector<ul>
 <li>MacMini7,x </li>
 <li>MacBookPro11,x</li>
 </ul>
 </li>
-<li>BCM94360CSAX + BRCM20702(05AC:828c, Not sure on Bluetooth  chipset name)<ul>
+<li>BCM94360CSAX + BRCM20702(05AC:828c, Bluetooth 4.0)  + MHF4 Connector<ul>
 <li>MacBookPro10,x</li>
 </ul>
 </li>
-<li>BCM94350<ul>
-<li>MacBook8,1 - 4350C1</li>
-<li>MacBookPro13,x - 20703A2</li>
-<li>MacBookPro14,x - 4350</li>
+<li>BCM94350  + MHF4 Connector<ul>
+<li>MacBook8,1 - 4350C1, Bluetooth 4.0</li>
+<li>MacBookPro13,x - 20703A2, Bluetooth 4.2</li>
+<li>MacBookPro14,x - 4350, Bluetooth 4.2</li>
 </ul>
 </li>
 </ul>
 <p><strong>Solder/proprietary cards</strong>: Apple&apos;s custom cards that no one else has, specifically called SOCs from Broadcom</p>
 <ul>
-<li><p>BCM4364(Wifi) + 4364B0(Bluetooth)</p>
+<li><p>BCM4364(Wifi) + 4364B0(Bluetooth 5.0)</p>
 <ul>
 <li>iMac19,x</li>
 <li>MacMini8,1</li>
 <li>MacBookPro15,x</li>
-<li>iMacPro1,1 - 4364(Bluetooth)</li>
-<li>MacPro7,1- 4364B3(Bluetooth)</li>
+<li>iMacPro1,1 - 4364(Bluetooth 4.2)</li>
+<li>MacPro7,1- 4364B3(Bluetooth 5.0)</li>
 </ul>
 </li>
 <li><p>BCM4355</p>
@@ -385,8 +392,8 @@
 </li>
 </ul>
 <h1 id="what-does-an-airport-adapter-look-like"><a name="what-does-an-airport-adapter-look-like" class="plugin-anchor" href="#what-does-an-airport-adapter-look-like"><i class="fa fa-link" aria-hidden="true"></i></a>What does an Airport adapter look like?</h1>
-<p><img src="https://i.imgur.com/AUtNhiB.jpg" alt="PCIe Adapter(Requires an extra USB port for bluetooth)"></p>
-<p><img src="https://i.imgur.com/MNt8xqq.jpg" alt="M.2 NGFF B+M Adapter(Requires an extra USB port for bluetooth)"></p>
+<p><img src="https://i.imgur.com/AUtNhiB.jpg" alt="PCIe Adapter(Requires an extra USB port for Bluetooth)"></p>
+<p><img src="https://i.imgur.com/MNt8xqq.jpg" alt="M.2 NGFF B+M Adapter(Requires an extra USB port for Bluetooth)"></p>
 <p><img src="https://i.imgur.com/NLUpEl3.jpg" alt="M.2 NGFF A+E Adapter"></p>
 <p><img src="https://i.imgur.com/wRaFDLt.jpg" alt="mini PCIe Adapter"></p>
 
@@ -432,7 +439,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Airport Adapters","level":"1.4","depth":1,"next":{"title":"PCIe","level":"2.1","depth":1,"path":"types-of-wireless-card/pcie.md","ref":"types-of-wireless-card/pcie.md","articles":[]},"previous":{"title":"When/What kexts to use","level":"1.3","depth":1,"path":"Kext.md","ref":"Kext.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs","favicon-plus","github-edit","anchors","last-modified","medium-zoom"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"last-modified":{},"output":"_book","addcssjs":{"css":[],"js":[]},"medium-zoom":{},"fontsettings":{"family":"sans","size":2,"theme":"night"},"favicon-plus":{"appleTouchIconPrecomposed152":"","favicon":"","output":"_book"},"highlight":{},"github-edit":{"repo":"dortania/Wireless-Buyers-Guide","branch":"master"},"favicon":"/icons/favicon.ico","appleTouchIconPrecomposed152":"/icons/appleTouchIconPrecomposed152.png","sharing":{"all":[],"facebook":false,"google":false,"instapaper":false,"twitter":false,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchors":{},"search-plus":{}},"theme":"default","medium-zoom":{"margin":24,"background":"#363b40","scrollOffset":0},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"Airport.md","mtime":"2020-04-14T16:02:01.155Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-14T16:04:09.317Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Airport Adapters","level":"1.4","depth":1,"next":{"title":"PCIe","level":"2.1","depth":1,"path":"types-of-wireless-card/pcie.md","ref":"types-of-wireless-card/pcie.md","articles":[]},"previous":{"title":"When/What kexts to use","level":"1.3","depth":1,"path":"Kext.md","ref":"Kext.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-lunr","-search","search-plus","addcssjs","favicon-plus","github-edit","anchors","last-modified","medium-zoom"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"last-modified":{},"output":"_book","addcssjs":{"css":[],"js":[]},"medium-zoom":{},"fontsettings":{"family":"sans","size":2,"theme":"night"},"favicon-plus":{"appleTouchIconPrecomposed152":"","favicon":"","output":"_book"},"highlight":{},"github-edit":{"repo":"dortania/Wireless-Buyers-Guide","branch":"master"},"favicon":"/icons/favicon.ico","appleTouchIconPrecomposed152":"/icons/appleTouchIconPrecomposed152.png","sharing":{"all":[],"facebook":false,"google":false,"instapaper":false,"twitter":false,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchors":{},"search-plus":{}},"theme":"default","medium-zoom":{"margin":24,"background":"#363b40","scrollOffset":0},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"Airport.md","mtime":"2020-04-30T01:57:16.452Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-30T01:59:19.670Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
