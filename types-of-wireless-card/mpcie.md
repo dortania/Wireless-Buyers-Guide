@@ -26,7 +26,7 @@ There are some work arounds with [BIOS mods](https://medium.com/@p0358/removing-
    * Unex DAXB-81
    * Wistron NeWeb DNXB-C1
    
-* **BCM94352HMB** (ABGN+AC,BT 4.0, 2x2:2):
+* **BCM94352HMB** (ABGN+AC, BT 4.0, 2x2:2):
 
    * AzureWave AW-CE123H
    * Dell DW1550
