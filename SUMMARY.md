@@ -18,4 +18,3 @@
 * [Bluetooth](/misc/bluetooth.md)
 * [Where's my Intel Wifi?](/misc/intel.md)
 * [Credit](/misc/credit.md)
-

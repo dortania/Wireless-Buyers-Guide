@@ -3,15 +3,15 @@
 No good guide is made by one man, here's credit to those who've helped out:
 
 * [Midi](https://github.com/midi1996)
-   * [Hackintosh FAQ: Wifi](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility)
-   * Overall corrections
-   * Correction on BCM94352Z chipset
-   
+  * [Hackintosh FAQ: Wifi](https://www.reddit.com/r/hackintosh/wiki/faq#wiki_wifi_compatibility)
+  * Overall corrections
+  * Correction on BCM94352Z chipset
+
 * [DhinakG](https://github.com/dhinakg)
-   * Corrections regarding DW1830
+  * Corrections regarding DW1830
 
 * [Fewt](https://fewt.gitbook.io/laptopguide/)
-   * Added FV-HB1200
+  * Added FV-HB1200
 
 Sources:
 
@@ -21,4 +21,3 @@ Sources:
 * [WikiDevi](https://wikidevi.com/wiki/Main_Page)
 * [M.2 Interface](https://www.delock.de/infothek/M.2/M.2_e.html)
 * [Tonymacx86's Bluetooth list](https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/)
-

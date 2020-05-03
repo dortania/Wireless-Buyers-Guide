@@ -2,17 +2,15 @@
 
 So with Bluetooth in macOS, it can become quite confusing on what actually is supported and what's not.
 
-
 ## Supported Bluetooth chipset
 
 Well I was orginally going to manually find every supported model but user [MarkVillacampa](https://www.tonymacx86.com/members/markvillacampa.1790473/) has done a great job already so I'll link to his findings
 
 * **[Bluetooth List](https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/)**
 
-
 **Asus and Lenovo note**: On 7th gen and newer chipsets, Bluetooth has been intergrated into the PCH and these OEMS don't have any USB rails wired off of their A/E slots. This means that you'll need to either solder new headers for Bluetooth on your motherboard or route a USB cable to an existing port
 
-## So why does Bluetooth work on my Intel card?
+## So why does Bluetooth work on my Intel card
 
 Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively\(usually with the loss of Handoff, Airdrop, etc\). Wifi, on the other hand, is quite a bit more complicated as there needs to be explicit support in the IO80211 family for the device so only Broadcom/Atheros cards have any chance of working
 

@@ -1,4 +1,4 @@
-# Where's my Intel Wifi?!?
+# Where's my Intel Wifi
 
 So it's an interesting time, we're finally getting traction on an Intel Wifi kext for macOS. While not finished and much to be done, you can check the progress here:
 

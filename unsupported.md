@@ -1,4 +1,4 @@
-With macOS there's a limited amount of supported hardware regardless of which category and wireless cards are no different. 
+With macOS there's a limited amount of supported hardware regardless of which category and wireless cards are no different.
 
 ## Supported chipsets
 
@@ -25,6 +25,7 @@ Intel Wireless AX
 * Intel® Wi-Fi 6 AX200
 
 Intel Wireless AC
+
 * Intel® Wireless-AC 9560
 * Intel® Wireless-AC 9462
 * Intel® Wireless-AC 9461
