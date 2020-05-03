@@ -1,6 +1,6 @@
 # Where's my Intel Wifi?!?
 
-So it's an interesting time, we're finally getting tranction on an Intel Wifi kext for macOS. While not finished and much to be done, you can check the progress here:
+So it's an interesting time, we're finally getting traction on an Intel Wifi kext for macOS. While not finished and much to be done, you can check the progress here:
 
 * [AppleIntelWifi on MacOS](https://intelwifi.0xcc.pw/)
 
