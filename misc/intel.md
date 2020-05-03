@@ -4,4 +4,4 @@ So it's an interesting time, we're finally getting traction on an Intel Wifi kex
 
 * [AppleIntelWifi on MacOS](https://intelwifi.0xcc.pw/)
 
-Please do note bombard them will issues and such about support, if you're not willing to provide logs then I recommend staying away until officaial release.
+Please do note bombard them will issues and such about support, if you're not willing to provide logs then I recommend staying away until official release.
