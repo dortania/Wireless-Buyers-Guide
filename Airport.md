@@ -27,7 +27,7 @@ Best part, **no kexts needed!**
 * BCM943602CS(Wifi) + 20703A1(Bluetooth 4.0) + MHF4 Connector
   * MacBookPro12,x
 * BCM94360CS(Wifi) + 20702B0(Bluetooth 4.0) + MHF4 Connector
-  * MacMini7,x
+  * Macmini7,x
   * MacBookPro11,x
 * BCM94360CSAX + BRCM20702(05AC:828c, Bluetooth 4.0)  + MHF4 Connector
   * MacBookPro10,x
@@ -40,7 +40,7 @@ Best part, **no kexts needed!**
 
 * BCM4364(Wifi) + 4364B0(Bluetooth 5.0)
   * iMac19,x
-  * MacMini8,1
+  * Macmini8,1
   * MacBookPro15,x
   * iMacPro1,1 - 4364(Bluetooth 4.2)
   * MacPro7,1- 4364B3(Bluetooth 5.0)
