@@ -25,7 +25,7 @@ Currently supported chipsets:
   * Fenvi FV T919 (Bluetooth 4.0)
   * Fenvi AC1900 (No Bluetooth, EOL)
   * TP-LINK Archer T9E AC1900 (No Bluetooth, EOL)
-  * TP-LINK Archer T8E  (No Bluetooth)
+  * TP-LINK Archer T8E (No Bluetooth)
   * RNX-AC1900PCE (No Bluetooth)
   * ASUS PCE-AC66 (No Bluetooth)
   * ASUS PCE-AC68 (No Bluetooth)
