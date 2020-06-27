@@ -1,8 +1,8 @@
 By far the most popular option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benefits of this is that as long as the hardware works natively on a real mac it will work on without any kexts/framework modifications. With PCIe you have a couple of options:
 
-* Apple Airport Card adapted to a full sized PCIe adapter(Recommended)
-* Apple Airport Card adapted to M.2 B+M Key(same as what NVMe SSDs run off)
-* Apple Airport Card adapted to M.2 A+E Key(same as what Intel wireless cards run off)
+* Apple Airport Card adapted to a full sized PCIe adapter (Recommended)
+* Apple Airport Card adapted to M.2 B+M Key (same as what NVMe SSDs run off)
+* Apple Airport Card adapted to M.2 A+E Key (same as what Intel wireless cards run off)
 * Full sized PCIe Wireless card
 
 Currently supported chipsets:
@@ -10,7 +10,7 @@ Currently supported chipsets:
 * BCM943602CDP
 * BCM943602CD
 * BCM94360CD
-* BCM94331CD\(may need to force the kext to load for Catalina\)
+* BCM94331CD (may need to force the kext to load for Catalina\)
 * BCM94360CS2
 * BCM943602CS
 * BCM94360CSAX
@@ -18,28 +18,28 @@ Currently supported chipsets:
 * BCM94352Z
 * BCM94350ZAE
 
-# Supported(Full sized PCIe Wireless card)
+# Supported (Full sized PCIe Wireless card)
 
-* **BCM94360CD**(ABGN+AC):
+* **BCM94360CD** (ABGN+AC):
 
-  * Fenvi FV T919 (BT 4.0)
-  * Fenvi AC1900\(no Bluetooth, recently discontinued\)
-  * TP-LINK Archer T9E AC1900\(no Bluetooth\)
-  * TP-LINK Archer T8E\(no Bluetooth\)
-  * RNX-AC1900PCE\(no Bluetooth\)
-  * ASUS PCE-AC66\(no Bluetooth\)
-  * ASUS PCE-AC68\(no Bluetooth\)
+  * Fenvi FV T919 (Bluetooth 4.0)
+  * Fenvi AC1900 (No Bluetooth, EOL)
+  * TP-LINK Archer T9E AC1900 (No Bluetooth, EOL)
+  * TP-LINK Archer T8E  (No Bluetooth)
+  * RNX-AC1900PCE (No Bluetooth)
+  * ASUS PCE-AC66 (No Bluetooth)
+  * ASUS PCE-AC68 (No Bluetooth)
 
-* **BCM94360CS2**(ABGN+AC):
+* **BCM94360CS2** (ABGN+AC):
 
-  * Fenvi FV-HB1200(BT 4.0)
-  * AWD Wireless LAN Card\(No Bluetooth\)
+  * Fenvi FV-HB1200 (Bluetooth 4.0)
+  * AWD Wireless LAN Card (No Bluetooth)
 
-* **BCM94352**(ABGN+AC):
+* **BCM94352** (ABGN+AC):
 
-  * TP-LINK Archer T6E\(no Bluetooth\)
-  * Rosewill RNX-AC1300PCE\(no Bluetooth\)
-  * ASUS PCE-AC56\(no Bluetooth\)
+  * TP-LINK Archer T6 (No Bluetooth)
+  * Rosewill RNX-AC1300PCE (No Bluetooth)
+  * ASUS PCE-AC56 (No Bluetooth)
 
 All cards presented here besides the Apple Airport and Fenvi cards require the following:
 
