@@ -1,3 +1,5 @@
+# Supported/Unsupported Chipsets
+
 With macOS there's a limited amount of supported hardware regardless of which category and wireless cards are no different.
 
 ## Supported chipsets

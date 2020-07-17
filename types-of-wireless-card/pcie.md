@@ -1,3 +1,5 @@
+# PCIe
+
 By far the most popular option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benefits of this is that as long as the hardware works natively on a real mac it will work on without any kexts/framework modifications. With PCIe you have a couple of options:
 
 * Apple Airport Card adapted to a full sized PCIe adapter (Recommended)

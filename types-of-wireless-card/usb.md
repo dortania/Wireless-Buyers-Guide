@@ -1,3 +1,5 @@
+# USB
+
 While the worst options for wireless, this is one that not many people can choose to avoid due to either their wireless cards being soldered or not wanting to break their warranty to replace their card.
 
 Things to keep in mind:
