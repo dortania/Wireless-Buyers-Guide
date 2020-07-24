@@ -4,22 +4,30 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 
 ## Supported chipsets
 
+### Big Sur
+
 * BCM94360
-* BCM94331 (May require you to force load kext when running Catalina)
 * BCM94352
 * BCM94350
 
-High Sierra:
+### Mojave and Catalina
+
+* BCM94331
+  * May require you to force load kext when running Catalina
+* All those mentioned in Big Sur are also supported
+
+### High Sierra
 
 * BCM943224
 * AR9285
 * AR9287
 * AR9280
 * AR9380
+* All those mentioned in Mojave and newer are also supported
 
 # Unsupported Chipsets
 
-So for some reason, people need a list of unsupported wireless cards just to reassure them that their EXACT model doesn't work. Well here's that list of all Intel chips cause why not:
+Currently these chipsets are not offically supported in macOS(see here for possible solutions: [Where's my Intel Wifi](../misc/unsupported.md)):
 
 Intel Wireless AX
 
