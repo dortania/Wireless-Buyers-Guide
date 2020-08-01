@@ -27,6 +27,10 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 
 # Unsupported Chipsets
 
+Some Broadcom Wi-Fi cards are not supported:
+
+* Dell Wireless 1704 (BCM43142)
+
 Currently these chipsets are not offically supported in macOS(see here for possible solutions: [Where's my Intel Wifi](../misc/unsupported.md)):
 
 Intel Wireless AX
