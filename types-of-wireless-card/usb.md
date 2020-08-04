@@ -55,6 +55,12 @@ I've listed out all the chipsets that have been known good and you can see if yo
 * **RTL8812AU**:
 
   * Linksys WUSB6300
+  
+# Wireless-USB-Adapter-Bluetooth
+
+This works out of the box for catalina.
+
+  * IOGEAR Bluetooth 4.0 USB Micro Adapter (GBU521)
 
 # [USB Wireless Utility](https://github.com/chris1111/USB-Wireless-Utility)
 
