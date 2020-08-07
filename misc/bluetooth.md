@@ -7,7 +7,9 @@ So with Bluetooth in macOS, it can become quite confusing on what actually is su
 Well I was orginally going to manually find every supported model but user [MarkVillacampa](https://www.tonymacx86.com/members/markvillacampa.1790473/) has done a great job already so I'll link to his findings
 
 * **[Bluetooth List](https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/)**
-  * The IOGEAR Bluetooth 4.0 USB Micro Adapter (GBU521) is a good example of a supported USB Bluetooth dongle.
+  * IOGEAR Bluetooth 4.0(GBU521)
+  * ASUS USB-BT400
+  * Insignia NS-PCY5BMA
   
 **Asus and Lenovo note**: On 7th gen and newer laptop chipsets, Bluetooth has been intergrated into the PCH and these OEMS don't have any USB rails wired off of their A/E slots. This means that you'll need to either solder new headers for Bluetooth on your motherboard or route a USB cable to an existing port
 
