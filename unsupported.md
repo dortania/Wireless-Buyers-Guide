@@ -14,7 +14,7 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 
 * BCM94331
   * May require you to force load kext when running Catalina
-* All those mentioned in Big Sur are also supported
+* All those mentioned in Big Sur are also supported in Mojave
 
 ### High Sierra
 
@@ -23,11 +23,26 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 * AR9287
 * AR9280
 * AR9380
-* All those mentioned in Mojave and newer are also supported
+* All those mentioned in Mojave and newer are also supported in High Sierra
 
 # Unsupported Chipsets
 
-Currently these chipsets are not offically supported in macOS(see here for possible solutions: [Where's my Intel Wifi](../misc/unsupported.md)):
+## Boardcom
+
+* BCM4311
+* BCM4312
+* BCM4313
+* BCM4356
+* BCM43142
+* BCM43228
+
+## Atheros
+
+* AR5424
+
+## Intel
+
+Currently these Intel chipsets are not offically supported in macOS(see here for possible solutions: [Where's my Intel Wifi](../misc/unsupported.md)):
 
 Intel Wireless AX
 
