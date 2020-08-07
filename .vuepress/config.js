@@ -6,7 +6,7 @@ module.exports = {
     /**
      * Ref：https://v1.vuepress.vuejs.org/config/#title
      */
-    title: 'Wireless Guyers Guide',
+    title: 'Wireless Buyers Guide',
     /**
      * Ref：https://v1.vuepress.vuejs.org/config/#description
      */
