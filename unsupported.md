@@ -27,7 +27,7 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 
 # Unsupported Chipsets
 
-## Boardcom
+## Broadcom
 
 * BCM4311
 * BCM4312
