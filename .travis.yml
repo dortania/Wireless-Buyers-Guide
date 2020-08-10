@@ -10,7 +10,8 @@ deploy:
   local_dir: .vuepress/dist/
   provider: pages
   skip_cleanup: true
-  name: Travis Build Bot
+  name: Dortania Bot
+  email: bot@dortania.ml
   keep_history: true
   on:
     branch: master
