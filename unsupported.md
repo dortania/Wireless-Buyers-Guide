@@ -42,7 +42,7 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 
 ## Intel
 
-Currently these Intel chipsets are not offically supported in macOS(see here for possible solutions: [Where's my Intel Wifi](../misc/unsupported.md)):
+Currently these Intel chipsets are not offically supported in macOS(see here for possible solutions: [Where's my Intel Wifi](../misc/intel.md)):
 
 Intel Wireless AX
 
