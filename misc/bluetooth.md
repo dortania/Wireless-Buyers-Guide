@@ -29,4 +29,4 @@ All of Apple's cards natively support this feature but you'll need to search on 
 
 This is mainly for devices that only have 1 Bluetooth profile which can be a bit frustrating when switching between OSes, we'll our local Frewt boll has saved us again!
 
-* **[Dual Booting with Bluetooth Devices](https://fewtarius.gitbook.io/laptopguide/extras/dual-booting-with-bluetooth-devices)**
+* **[Dual Booting with Bluetooth Devices](https://github.com/dortania/clover-laptop-guide/blob/master/extras/dual-booting-with-bluetooth-devices.md)**
