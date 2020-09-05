@@ -4,19 +4,20 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 
 ## Supported chipsets
 
-### Big Sur
+### Big Sur(11)
 
+* BCM943602
 * BCM94360
 * BCM94352
 * BCM94350
 
-### Mojave and Catalina
+### Mojave(10.14) and Catalina(10.15)
 
 * BCM94331
-  * May require you to force load kext when running Catalina
-* All those mentioned in Big Sur are also supported in Mojave
+  * May require you to force load IO80211Family.kext when running macOS 10.15, Catalina, see `Kernel -> Force` in OpenCore for more details 
+* All those mentioned in Big Sur(11) are also supported in Mojave(10.14) and Catalina(10.15)
 
-### High Sierra
+### High Sierra(10.13)
 
 * BCM943224
 * AR9285
