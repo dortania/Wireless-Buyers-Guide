@@ -20,10 +20,10 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 ### High Sierra(10.13)
 
 * BCM943224
-* AR9285
-* AR9287
-* AR9280
-* AR9380
+* AR9285(AR5B95)
+* AR9287(AR5B97)
+* AR9280(AR5BHB92)
+* AR9380(AR5BXB112)
 * All those mentioned in Mojave and newer are also supported in High Sierra
 
 # Unsupported Chipsets
