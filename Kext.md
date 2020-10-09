@@ -1,6 +1,12 @@
 # When and what kexts to use
 
-## [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
+* [Broadcom](#broadcom)
+* [Intel](#intel)
+* [Atheros](#atheros)
+
+## Broadcom
+
+### [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
 
 This is needed to fix wifi on many Broadcom cards, while not all of them need them it's generally required when using non-apple manufactured wireless cards. This also has the added functionality of injecting old Broadcom kexts into newer versions of macOS.
 
@@ -8,7 +14,7 @@ Note:
 
 * Apple Airport and Fenvi cards do not need this kext
 
-## [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
+### [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
 
 Required for all non-apple manufactured wireless cards due to how Firmware is handled. This is actually a bundle of multiple kexts:
 
@@ -24,23 +30,20 @@ Note:
 * Apple Airport and Fenvi cards do not need these kexts
 * OpenCore order is alphabetical: Injector -> Data -> RAM
 
-## [BT4LEContinuityFixup](https://github.com/acidanthera/BT4LEContinuityFixup)
+## Intel
 
-Needed to fix odd Continuity issues which allow for the use of:
+### [itlwm](https://github.com/OpenIntelWireless/itlwm)
 
-* Handoff
-* Instant Hotspot
-* New Airdrop
-* Apple Watch Unlock
+Currently does connect and even support Apple's own IO80211 framework(via AirportItlwm), unfortunately doesn't support Airdrop, see here for features and limitations: [OpenIntelWireless](https://openintelwireless.github.io/)
 
-Generally unneeded so avoid use when you notice issues with your card
+### [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases)
 
-Note:
+Adds Bluetooth support to macOS when paired with an Intel wireless card
 
-* Apple Airport and Fenvi cards shouldn't need this kext
-* Continuity requires a Bluetooth 4.0 Low Energy supported card
 
-## [AirPortAtheros40](https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip)
+## Atheros
+
+### [AirPortAtheros40](https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip)
 
 This kext is required for all Atheros chipsets that had support dropped in Mojave, these include:
 
@@ -66,6 +69,10 @@ sudo chown -R root:wheel /L*/E*; sudo chmod -R 755 /L*/E*; sudo kextcache -i /
 
 **Catalina users note**: These methods no longer works without backporting the entire IO80211 framework, this is not ideal for stability reasons
 
-## [ATH9KFixup](https://github.com/chunnann/ATH9KFixup)
+### [ATH9KFixup](https://github.com/chunnann/ATH9KFixup)
 
-To be paired with AirPortAtheros40 to fix support for many atheros cards, similar idea to AirportBrcmFixup
+To be paired with AirPortAtheros40 to fix support for many Atheros cards, similar idea to AirportBrcmFixup
+
+### [AthBluetoothFirmware](https://github.com/zxystd/AthBluetoothFirmware/releases)
+
+Required to ensure Bluetooth firmware is loaded correctly in macOS
