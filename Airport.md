@@ -10,7 +10,9 @@ Best part, **no kexts needed!**
 
 # Which cards shipped with what
 
-**Socketed cards**: Ones you can buy and install yourself
+## **Socketed cards**
+
+Ones you can buy and install yourself
 
 * BCM943602CDP(Wifi) + 20703A1(Bluetooth 4.0) + U.FL Connector
   * iMac16,x
@@ -38,7 +40,49 @@ Best part, **no kexts needed!**
   * MacBookPro13,x - 20703A2, Bluetooth 4.2
   * MacBookPro14,x - 4350, Bluetooth 4.2
 
-**Solder/proprietary cards**: Apple's custom cards that no one else has, specifically called SOCs from Broadcom
+<details>
+<summary>Legacy Wifi Cards</summary>
+
+**Broadcom**:
+
+* BCM4328
+  * iMac5,1-9,1
+  * MacBook3,1-4,1
+  * MacBookAir1,1-2,1
+* BCM4321
+  * MacPro2,1
+  * Macmini4,1
+* BCM4322
+  * MacBook5,1
+  * MacBookPro5,1 and 7,1
+  * MacBookAir3,1-5,1
+  * MacPro5,1
+* BCM43224
+  * MacBook6,1
+  * MacBookPro6,1
+* BCM4331
+  * Macmini5,x
+  * MacBookPro8,x-10,x
+
+**Atheros**:
+
+* AR242X/AR542X
+  * MacBook1,1
+  * Macmini1,1-2,1
+* AR5418
+  * MacBook2,1
+* AR928X
+  * iMac10,1-11,x
+  * MacPro3,1
+* AR93XX
+  * iMac12,x
+
+</details>
+<br>
+
+## **Solder/proprietary cards**
+
+Apple's custom cards that no one else has, specifically called SOCs from Broadcom
 
 * BCM4364(Wifi) + 4364B0(Bluetooth 5.0)
   * iMac19,x
@@ -49,6 +93,7 @@ Best part, **no kexts needed!**
 
 * BCM4355
   * MacBookAir8,1
+  
 
 # What does an Airport adapter look like
 
