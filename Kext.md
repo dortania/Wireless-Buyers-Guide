@@ -43,35 +43,27 @@ Adds Bluetooth support to macOS when paired with an Intel wireless card
 
 ## Atheros
 
-### [AirPortAtheros40](https://github.com/khronokernel/Wifi-Buyers-Guide/blob/master/AirPortAtheros40.kext.zip)
+### [High Sierra's IO80211Family](https://github.com/khronokernel/IO80211-Patches/blob/main/10.13.6-High-Sierra-Kexts/IO80211HighSierra.kext.zip)
 
 This kext is required for all Atheros chipsets that had support dropped in Mojave, these include:
 
-* AR9285
-* AR9287
-* AR9280
-* AR9380
+* AR242x
+* AR542x
+* AR5416
+* AR5418
+* AR9280 - AR5BHB92
+* AR9285 - AR5B95
+* AR9287 - AR5B97
+* AR9380 - AR5BXB112
 
-To install the AirPortAtheros40, you have 2 methods:
-
-* Kext injection via bootloader
-* Installation into macOS(Library/Extensions)
-
-The first method is recommended, the second should be avoided but may work better for some users. **Test injection first**
-
-For macOS installation:
-
-You'll need to copy it to Library/Extensions(**NOT** System/Library/Extensions) and then run the following command:
-
-```
-sudo chown -R root:wheel /L*/E*; sudo chmod -R 755 /L*/E*; sudo kextcache -i /
-```
-
-**Catalina users note**: These methods no longer works without backporting the entire IO80211 framework, this is not ideal for stability reasons
 
 ### [ATH9KFixup](https://github.com/chunnann/ATH9KFixup)
 
-To be paired with AirPortAtheros40 to fix support for many Atheros cards, similar idea to AirportBrcmFixup
+To be paired with AirPortAtheros40 to fix support for many unsupported Atheros cards, similar idea to AirportBrcmFixup:
+
+* AR946X (AR9462 & AR9463)
+* AR9485
+* AR9565
 
 ### [AthBluetoothFirmware](https://github.com/zxystd/AthBluetoothFirmware/releases)
 
