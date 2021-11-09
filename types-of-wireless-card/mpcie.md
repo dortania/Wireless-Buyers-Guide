@@ -2,20 +2,20 @@
 
 So mini PCIe is most useful for users with older systems that don't have M.2 based wireless. With mini PCIe you have a couple of options:
 
-* Half Sized mini PCIe
+* Half sized mini PCIe
 * Full sized mini PCIe
-* Apple Airport Card adapted to a full sized mini PCIe
+* Apple AirPort card adapted to full sized mini PCIe
 
-For older laptop users you'll generally be limited to half sized mini PCIe wireless cards due to space constraints but for desktop users, it's recommended to buy an Apple Airport Card with an adapter. The reason being is this avoids issues with PCI IDs not matching and not having drivers flags be set off, solutions are to force load the accompanying kext or modify the kext's PCI ID list to support your model.
+For older laptop users you'll generally be limited to half sized mini PCIe wireless cards due to space constraints, but for desktop users, it's recommended to buy an Apple AirPort Card with an adapter. The reason is that this avoids issues with PCI IDs not matching and not having drivers flags be set off, solutions are to force load the accompanying kext or modify the kext's PCI ID list to support your model.
 
 The other thing to note with mini PCIe is that some vendors have a whitelist on wireless cards installed, speciifcally that only their brand of cards will work. The system **won't even post** with a non-branded one installed, the main culprits:
 
-* Lenovo(7th gen and older)
+* Lenovo (7th gen and older)
 * Toshiba
-* HP(3rd gen and older)
+* HP (3rd gen and older)
 * Compaq
 
-There are some work arounds with [BIOS mods](https://medium.com/@p0358/removing-wlan-wwan-bios-whitelist-on-a-lenovo-laptop-to-use-a-custom-wi-fi-card-f6033a5a5e5a), though be careful as poor patching can in fact **brick your device**
+There are some work arounds with [BIOS mods](https://medium.com/@p0358/removing-wlan-wwan-bios-whitelist-on-a-lenovo-laptop-to-use-a-custom-wi-fi-card-f6033a5a5e5a), though be careful as poor patching can in fact **brick your device**.
 
 # Supported
 
@@ -39,14 +39,16 @@ All cards presented here require the following:
 
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases)
 * [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
-  * BrcmBluetoothInjector
+  * BrcmBluetoothInjector (don't use on macOS 12)
   * BrcmFirmwareData
   * BrcmPatchRAM fix:
-    * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
-    * BrcmPatchRAM2 for 10.11-10.14
-    * BrcmPatchRAM for 10.10 or older
+    * BrcmPatchRAM3 for macOS 10.14+ (must be paired with BrcmBluetoothInjector unless on macOS 12)
+  * BrcmPatchRAM2 for macOS 10.11-10.14
+  * BrcmPatchRAM for macOS 10.10 and older
+  * BlueToolFixup:
+    * Used in place of BrcmBluetoothInjector on macOS 12
 
-# Older models(Not natively supported in Mojave)
+# Older models (not natively supported in Mojave)
 
 With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding these wireless cards.
 

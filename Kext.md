@@ -10,31 +10,34 @@
 
 This is needed to fix wifi on many Broadcom cards, while not all of them need them it's generally required when using non-apple manufactured wireless cards. This also has the added functionality of injecting old Broadcom kexts into newer versions of macOS.
 
-Note:
-
-* Apple Airport and Fenvi cards do not need this kext
+* Note: Apple AirPort and Fenvi cards do not need this kext
 
 ### [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
 
-Required for all non-apple manufactured wireless cards due to how Firmware is handled. This is actually a bundle of multiple kexts:
+Required for all non-Apple manufactured wireless cards due to how firmware is handled. This is actually a bundle of multiple kexts:
 
-* BrcmBluetoothInjector
+* BrcmBluetoothInjector (don't use on macOS 12)
 * BrcmFirmwareData
 * BrcmPatchRAM fix:
-  * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
-  * BrcmPatchRAM2 for 10.11-10.14
-  * BrcmPatchRAM for 10.10 or older
+  * BrcmPatchRAM3 for macOS 10.14+ (must be paired with BrcmBluetoothInjector unless on macOS 12)
+  * BrcmPatchRAM2 for macOS 10.11-10.14
+  * BrcmPatchRAM for macOS 10.10 and older
+* BlueToolFixup:
+  * Used in place of BrcmBluetoothInjector on macOS 12
 
 Note:
 
-* Apple Airport and Fenvi cards do not need these kexts
-* OpenCore order is alphabetical: Injector -> Data -> RAM
+* Apple AirPort and Fenvi cards do not need these kexts
+* OpenCore order: Injector -> Data -> RAM
 
 ## Intel
 
 ### [itlwm](https://github.com/OpenIntelWireless/itlwm)
 
-Currently does connect and even support Apple's own IO80211 framework(via AirportItlwm), unfortunately doesn't support Airdrop, see here for features and limitations: [OpenIntelWireless](https://openintelwireless.github.io/)
+* [itlwm](https://github.com/OpenIntelWireless/itlwm)
+  * itlwm.kext uses Apple's IOEthernet, is more stable than AirportItlwm.kext, and is completely based on open-source resources
+  * AirportItlwm.kext uses Apple's IO80211, which is less stable than itlwm.kext, but supports certain Continuity features
+  * Unfortunately, neither kext supports AirDrop; see here for features and limitations: [OpenIntelWireless](https://openintelwireless.github.io/)
 
 ### [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases)
 
