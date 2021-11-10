@@ -31,7 +31,7 @@ Required for all non-Apple manufactured wireless cards due to how firmware is ha
 Note:
 
 * Apple AirPort and Fenvi cards do not need these kexts
-* OpenCore order: Injector -> Data -> RAM
+* OpenCore order: BrcmBluetoothInjector or BlueToolFixup -> BrcmFirmwareData -> BrcmPatchRAM
 
 ## Intel
 
