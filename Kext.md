@@ -16,7 +16,8 @@ This is needed to fix wifi on many Broadcom cards, while not all of them need th
 
 Required for all non-Apple manufactured wireless cards due to how firmware is handled. This is actually a bundle of multiple kexts:
 
-* BrcmBluetoothInjector (don't use on macOS 12)
+* BrcmBluetoothInjector
+  * Do not use with macOS 12, use BlueToolFixup instead
 * BrcmFirmwareData
 * BrcmPatchRAM fix:
   * BrcmPatchRAM3 for macOS 10.14+ (must be paired with BrcmBluetoothInjector unless on macOS 12)
