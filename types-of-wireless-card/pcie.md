@@ -1,11 +1,11 @@
 # PCIe
 
-By far the most popular option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benefits of this is that as long as the hardware works natively on a real mac it will work on without any kexts/framework modifications. With PCIe you have a couple of options:
+By far the most popular option for desktop users has been to buy an old Apple AirPort wireless card and place it into a PCIe riser card. The benefits of this are that as long as the hardware works natively on a real Mac, it will work without any kexts/framework modifications. With PCIe, you have a couple of options:
 
-* Apple Airport Card adapted to a full sized PCIe adapter (Recommended)
-* Apple Airport Card adapted to M.2 B+M Key (same as what NVMe SSDs run off)
-* Apple Airport Card adapted to M.2 A+E Key (same as what Intel wireless cards run off)
-* Full sized PCIe Wireless card
+* Apple AirPort Card adapted to a full sized PCIe adapter (recommended)
+* Apple AirPort Card adapted to M.2 B+M Key (same as what NVMe SSDs use)
+* Apple AirPort Card adapted to M.2 A+E Key (same as what Intel wireless cards use)
+* Full sized PCIe wireless card
 
 Currently supported chipsets:
 
@@ -20,7 +20,7 @@ Currently supported chipsets:
 * BCM94352Z
 * BCM94350ZAE
 
-# Supported (Full sized PCIe Wireless card)
+# Supported (Full sized PCIe wireless card)
 
 * **BCM94360CD** (ABGN+AC):
 
@@ -43,20 +43,25 @@ Currently supported chipsets:
   * Rosewill RNX-AC1300PCE (No Bluetooth)
   * ASUS PCE-AC56 (No Bluetooth)
 
-All cards presented here besides the Apple Airport and Fenvi cards require the following:
+All cards presented here besides the Apple AirPort and Fenvi cards require the following:
 
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases)
 * [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
   * BrcmBluetoothInjector
+    * Do not use with macOS 12, use BlueToolFixup instead
+    * If you dual boot both macOS 11 or under and macOS 12, `MinKernel` and `MaxKernel` under `Kernel -> Add` in your config can be used to load one kext or the other in a specific OS
   * BrcmFirmwareData
   * BrcmPatchRAM fix:
-    * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
-    * BrcmPatchRAM2 for 10.11-10.14
-    * BrcmPatchRAM for 10.10 or older
+    * BrcmPatchRAM3 for macOS 10.14+ (must be paired with BrcmBluetoothInjector unless on macOS 12)
+    * BrcmPatchRAM2 for macOS 10.11-10.14
+    * BrcmPatchRAM for macOS 10.10 and older
+  * BlueToolFixup:
+    * Used in place of BrcmBluetoothInjector on macOS 12
+    * See above dual booting note
 
-# Older Models(Unsupported in Mojave)
+# Older Models (unsupported in Mojave)
 
-With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding this card unless absolutely necessary.
+With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding these cards unless absolutely necessary.
 
 **Note**: Injecting the kext into macOS Catalina is even more unstable, **highly encouraged to upgrade**
 
