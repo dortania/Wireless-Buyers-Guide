@@ -46,7 +46,6 @@ Note:
 
 Adds Bluetooth support to macOS when paired with an Intel wireless card
 
-
 ## Atheros
 
 ### [High Sierra's IO80211Family](https://github.com/khronokernel/IO80211-Patches/blob/main/10.13.6-High-Sierra-Kexts/IO80211HighSierra.kext.zip)
@@ -61,7 +60,6 @@ This kext is required for all Atheros chipsets that had support dropped in Mojav
 * AR9285 - AR5B95
 * AR9287 - AR5B97
 * AR9380 - AR5BXB112
-
 
 ### [ATH9KFixup](https://github.com/chunnann/ATH9KFixup)
 

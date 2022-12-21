@@ -15,7 +15,7 @@ With macOS, there's a limited amount of supported hardware regardless of which c
 
 * BCM943224
 * BCM94331
-  * May require you to force load IO80211Family.kext when running macOS Catalina; see `Kernel -> Force` in OpenCore for more details 
+  * May require you to force load IO80211Family.kext when running macOS Catalina; see `Kernel -> Force` in OpenCore for more details
 * All those mentioned in Big Sur are also supported in Catalina
 
 ### Mojave (10.14) and older
@@ -62,4 +62,3 @@ With macOS, there's a limited amount of supported hardware regardless of which c
 ## Intel
 
 Currently no Intel chipsets are officially supported in macOS, however great work has been done in this space with itlwm: [Where's my Intel Wi-Fi?](../misc/intel.md):
-

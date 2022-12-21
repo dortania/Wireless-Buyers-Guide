@@ -94,7 +94,6 @@ Apple's custom cards that no one else has, specifically called SOCs from Broadco
 * BCM4355
   * MacBookAir8,1
   
-
 # What does an AirPort adapter look like?
 
 ![PCIe Adapter (Requires an extra USB port for Bluetooth)](https://i.imgur.com/AUtNhiB.jpg)
