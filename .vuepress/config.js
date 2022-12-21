@@ -3,20 +3,7 @@ const {
 } = require('../package')
 
 module.exports = {
-    /**
-     * Ref：https://v1.vuepress.vuejs.org/config/#title
-     */
     title: 'Wireless Buyers Guide',
-    /**
-     * Ref：https://v1.vuepress.vuejs.org/config/#description
-     */
-    description: description,
-
-    /**
-     * Extra tags to be injected to the page HTML `<head>`
-     *
-     * ref：https://v1.vuepress.vuejs.org/config/#head
-     */
     head: [
         ['meta', {
             name: 'theme-color',
@@ -37,12 +24,30 @@ module.exports = {
     ],
     base: '/Wireless-Buyers-Guide/',
 
+    watch: {
+        $page(newPage, oldPage) {
+            if (newPage.key !== oldPage.key) {
+                requestAnimationFrame(() => {
+                    if (this.$route.hash) {
+                        const element = document.getElementById(this.$route.hash.slice(1));
 
-    /**
-     * Theme configuration, here is the default theme configuration for VuePress.
-     *
-     * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-     */
+                        if (element && element.scrollIntoView) {
+                            element.scrollIntoView();
+                        }
+                    }
+                });
+            }
+        }
+    },
+
+    markdown: {
+        extendMarkdown: md => {
+            md.use(require('markdown-it-multimd-table'), {
+                rowspan: true,
+            });
+        }
+    },
+
     theme: 'vuepress-theme-succinct',
     globalUIComponents: [
         'ThemeManager'
@@ -51,9 +56,8 @@ module.exports = {
     themeConfig: {
         lastUpdated: true,
         repo: 'https://github.com/dortania/Wireless-Buyers-Guide',
-        editLinks: false,
-        docsDir: '',
-        editLinkText: '',
+        editLinks: true,
+        editLinkText: 'Help us improve this page!',
         logo: '/homepage.png',
         nav: [{
             text: 'Dortania Guides',
@@ -97,9 +101,9 @@ module.exports = {
             sidebarDepth: 1,
             children: [
                 '',
-				'unsupported',
-				'Kext',
-				'Airport',
+                'unsupported',
+                'Kext',
+                'Airport',
             ]
 
         },
@@ -109,10 +113,10 @@ module.exports = {
             sidebarDepth: 2,
             children: [
                 '/types-of-wireless-card/pcie',
-				'/types-of-wireless-card/mpcie',
-				'/types-of-wireless-card/m2',
-				'/types-of-wireless-card/Express',
-				'/types-of-wireless-card/usb',
+                '/types-of-wireless-card/mpcie',
+                '/types-of-wireless-card/m2',
+                '/types-of-wireless-card/Express',
+                '/types-of-wireless-card/usb',
             ]
         },
         {
@@ -121,15 +125,12 @@ module.exports = {
             sidebarDepth: 2,
             children: [
                 '/misc/bluetooth',
-				'/misc/intel',
-				'/misc/credit',
+                '/misc/intel',
+                '/misc/credit',
             ]
         },
-    ],
-},
-    /**
-     * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-     */
+        ],
+    },
     plugins: [
         '@vuepress/plugin-back-to-top',
         'vuepress-plugin-smooth-scroll',
