@@ -22,6 +22,7 @@ With macOS, there's a limited amount of supported hardware regardless of which c
 
 * BCM94322
 * All those mentioned in Catalina and newer are also supported in Mojave
+* Mojave and up dropped support for all Atheros cards natively. Support for them can be restored with kexts listed on the next page.
 
 ### High Sierra (10.13) and older
 
