@@ -3,9 +3,11 @@
 With macOS, there's a limited amount of supported hardware regardless of which category, and wireless cards are no different.
 
 ## Supported chipsets
+### Sonoma (14) and Sequoia (15)
+Sonoma and later has officialy dropped support for all the natively supported Broadcom WiFi/BT cards listed, they will not work unless you patch the kexts using OCLP.  
+For Intel-based cards, Use ltwm + heliport, It still works.
 
-### Big Sur (11) and Monterey (12) and older
-
+### Big Sur (11), Monterey (12) and Ventura (13)
 * BCM943602
 * BCM94360
 * BCM94352
